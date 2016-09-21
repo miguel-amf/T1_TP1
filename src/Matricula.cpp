@@ -1,36 +1,36 @@
-#include "Telefone.h"
+#include "Matricula.h"
 #include <stdexcept>
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-Telefone::Telefone(){
+Matricula::Matricula(){
 
-    numero = "00000000";
+    matricula = "00000";
 }
 
-string Telefone::getNumero(){
-    return numero;
+string Matricula::getMatricula(){
+    return matricula;
 }
 
-void Telefone::setNumero(string novoNumero) throw(invalid_argument){
+void Matricula::setMatricula(string novaMatricula) throw(invalid_argument){
     try{
-        avalia(novoNumero);
+        avalia(novaMatricula);
     } catch (invalid_argument& erro){
         throw erro;
     }
-    numero = novoNumero;
+    matricula = novaMatricula;
 }
 
-void Telefone::avalia(string novoNumero)throw(invalid_argument){
+void Matricula::avalia(string novaMatricula)throw(invalid_argument){
 
-    if (novoNumero.length() != 8)
-        throw invalid_argument("O numero deve possuir 8 digitos.");
+    if (novaMatricula.length() != 5)
+        throw invalid_argument("A matricula deve possuir 5 digitos.");
 
-    for (int i=0; novoNumero[i] != '\0'; i++){
-        if(novoNumero[i] < 48 || novoNumero[i] > 57){
-            throw invalid_argument("O numero so deve conter digitos.");
+    for (int i=0; novaMatricula[i] != '\0'; i++){
+        if(novaMatricula[i] < 48 || novaMatricula[i] > 57){
+            throw invalid_argument("A matricula so deve conter digitos.");
         }
     }
 }
@@ -39,35 +39,35 @@ void Telefone::avalia(string novoNumero)throw(invalid_argument){
 Trecho referente ao teste da unidade
 */
 
-TesteTelefone::TesteTelefone() {
+TesteMatricula::TesteMatricula() {
     //zera a variavel para o codigo temporario
-    telefoneTemp = '\0';
+    matriculaTemp = '\0';
 }
 
-void TesteTelefone::setUp(Telefone alvo) {
+void TesteMatricula::setUp(Matricula alvo) {
     //Armazena o valor do codigo do alvo
-    telefoneTemp = alvo.getNumero();
+    matriculaTemp = alvo.getMatricula();
 }
 
-void TesteTelefone::tearDown(Telefone alvo) {
+void TesteMatricula::tearDown(Matricula alvo) {
     //atribui de volta o valor temporario
     try{
-        alvo.setNumero(telefoneTemp);
-    } catch(invalid_argument){
-        cout << "Number not set" << endl;
+        alvo.setMatricula(matriculaTemp);
+    } catch(invalid_argument& erro){
+        cout << erro.what() << endl;
     }
 
 }
 
 
-void TesteTelefone::run(Telefone alvo) {
+void TesteMatricula::run(Matricula alvo) {
 
     //flag para alertar o teste entrou no catch
     int flagCatch = 0;
-    cout << "Iniciando os Testes no objeto de telefone com numero igual a " << alvo.getNumero() << endl ;
-    cout << "testando valor '12345678' (Valido)             : ";
+    cout << "Iniciando os Testes no objeto matricula com matricula igual a " << alvo.getMatricula() << endl ;
+    cout << "testando valor '12345' (Valido)             : ";
     try {
-        alvo.setNumero("12345678");
+        alvo.setMatricula("12345");
     } catch(invalid_argument& erro) {
         flagCatch = 1;
         cout << "REPROVADO (" << erro.what() << ")" << endl;
@@ -81,10 +81,10 @@ void TesteTelefone::run(Telefone alvo) {
     flagCatch = 0;
 
     //Teste de tamanho
-    cout << "Testando valor '1234' (Invalido, length != 8) : " ;
+    cout << "Testando valor '1234' (Invalido, length != 5) : " ;
 
     try {
-        alvo.setNumero("1234");
+        alvo.setMatricula("1234");
     } catch(invalid_argument& erro) {
         flagCatch = 1;
         cout << "APROVADO (" << erro.what() << ")" << endl;
@@ -99,10 +99,10 @@ void TesteTelefone::run(Telefone alvo) {
 
     //teste de nao-alfabetico
 
-    cout << "Testando valor '1234567A' (Invalido, nao númerico) : " ;
+    cout << "Testando valor '1234A' (Invalido, nao númerico) : " ;
 
     try {
-        alvo.setNumero("1234567A");
+        alvo.setMatricula("1234A");
     } catch(invalid_argument& erro) {
         flagCatch = 1;
         cout << "APROVADO (" << erro.what() << ")" << endl;

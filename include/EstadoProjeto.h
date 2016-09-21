@@ -3,6 +3,9 @@
 
 #include <stdexcept>
 
+#define ATIVO 1
+#define INATIVO 2
+
 using namespace std;
 
 //!Estado do Projeto

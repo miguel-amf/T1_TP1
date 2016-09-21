@@ -4,6 +4,10 @@
 
 #include <stdexcept>
 
+#define ANALISTA 1
+#define PROJETISTA 2
+#define PROGRAMADOR 3
+
 using namespace std;
 
 //!Funcao do Projeto

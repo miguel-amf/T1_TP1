@@ -4,6 +4,11 @@
 
 #include <stdexcept>
 
+#define INICIACAO    1
+#define PREPARACAO   2
+#define EXECUCAO     3
+#define ENCERRAMENTO 4
+
 using namespace std;
 
 //!Fase do Projeto

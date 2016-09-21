@@ -34,7 +34,7 @@ int EstadoProjeto::getEstado() const{
 void EstadoProjeto::avalia(int entrada) throw(invalid_argument){
 
     //testa para a faixa de [0,9] nos inteiros
-    if (entrada<0 || entrada>9) {
+    if (entrada < 0 || entrada > 9) {
         throw invalid_argument("Entrada fora da faixa dinamica");
     }
 
@@ -46,7 +46,7 @@ Trecho para implementacao do TesteEstadoProjeto
 
 
 TesteEstadoProjeto::TesteEstadoProjeto() {
-    estadoTemp = 0;
+    estadoTemp = 3;
 }
 
 void TesteEstadoProjeto::setUp(EstadoProjeto alvo) {
