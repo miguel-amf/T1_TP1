@@ -52,3 +52,60 @@
 	<string>
 	<stdexcept>
 
+1474417614 source:c:\users\mamfbr\documents\github\t1_tp1\src\codigoprojeto.cpp
+	"CodigoProjeto.h"
+	<string>
+	<stdexcept>
+	<iostream>
+
+1474423199 c:\users\mamfbr\documents\github\t1_tp1\include\codigoprojeto.h
+	<string>
+	<stdexcept>
+
+1474427257 source:c:\users\mamfbr\documents\github\t1_tp1\src\data.cpp
+	"Data.h"
+	<iostream>
+
+1474427100 c:\users\mamfbr\documents\github\t1_tp1\include\data.h
+	<stdexcept>
+	<string>
+
+1474421967 source:c:\users\mamfbr\documents\github\t1_tp1\src\estadoprojeto.cpp
+	"EstadoProjeto.h"
+	<iostream>
+
+1474420519 c:\users\mamfbr\documents\github\t1_tp1\include\estadoprojeto.h
+	<stdexcept>
+
+1474423418 source:c:\users\mamfbr\documents\github\t1_tp1\src\faseprojeto.cpp
+	"FaseProjeto.h"
+	<iostream>
+
+1474423453 c:\users\mamfbr\documents\github\t1_tp1\include\faseprojeto.h
+	<stdexcept>
+
+1474471990 source:c:\users\mamfbr\documents\github\t1_tp1\src\funcao.cpp
+	"Funcao.h"
+	<iostream>
+
+1474423676 c:\users\mamfbr\documents\github\t1_tp1\include\funcao.h
+	<stdexcept>
+
+1474458833 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
+	"CodigoProjeto.h"
+	"EstadoProjeto.h"
+	"FaseProjeto.h"
+	"Data.h"
+	"Nome.h"
+	<iostream>
+
+1474471464 c:\users\mamfbr\documents\github\t1_tp1\include\nome.h
+	<string>
+	<stdexcept>
+
+1474472052 source:c:\users\mamfbr\documents\github\t1_tp1\src\nome.cpp
+	"Nome.h"
+	<string>
+	<stdexcept>
+	<iostream>
+

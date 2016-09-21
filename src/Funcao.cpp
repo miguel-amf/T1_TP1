@@ -93,7 +93,7 @@ void TesteFuncao::run(Funcao alvo) {
 
     //testando para ver se entrou no catch
     if (flagCatch == 0) {
-        cout << "REPROVADO (Aceitou o valor)" << alvo.getFuncao() << endl;
+        cout << "REPROVADO (Aceitou o valor)" << endl;
     }
     //reset na flag para proximo teste
     flagCatch = 0;

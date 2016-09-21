@@ -10,13 +10,13 @@ using namespace std;
 
 int main() {
 
-    Data b;
-    TesteData test;
+    Nome b;
+    TesteNome test;
 
     try {
-        b.setData("05/05/2025");
+        b.setNome("Galileu Galilei");
     } catch (invalid_argument) {
-
+        cout << endl << "deu ruim" << endl;
     }
 
 
@@ -24,7 +24,7 @@ int main() {
     test.run(b);
     test.tearDown(b);
 
-    cout << endl << b.getData() << endl;
+    cout << endl << b.getNome() << endl;
 
     return 0;
 }
