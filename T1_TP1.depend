@@ -148,7 +148,8 @@
 1474490396 c:\users\vitor\documents\t1_tp1\include\funcao.h
 	<stdexcept>
 
-1474494570 source:c:\users\vitor\documents\t1_tp1\src\main.cpp
+1474498887 source:c:\users\vitor\documents\t1_tp1\src\main.cpp
+	"Custo.h"
 	"CodigoProjeto.h"
 	"EstadoProjeto.h"
 	"FaseProjeto.h"
@@ -157,6 +158,7 @@
 	"Telefone.h"
 	"Senha.h"
 	"Matricula.h"
+	"Email.h"
 	<iostream>
 	<stdio.h>
 
@@ -208,4 +210,12 @@
 1474495585 c:\users\vitor\documents\t1_tp1\include\email.h
 	<stdexcept>
 	<string>
+
+1474498960 source:c:\users\vitor\documents\t1_tp1\src\custo.cpp
+	"Custo.h"
+	<stdexcept>
+	<iostream>
+
+1474498928 c:\users\vitor\documents\t1_tp1\include\custo.h
+	<stdexcept>
 

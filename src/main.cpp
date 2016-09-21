@@ -1,6 +1,7 @@
 
 using namespace std;
 
+#include "Custo.h"
 #include "CodigoProjeto.h"
 #include "EstadoProjeto.h"
 #include "FaseProjeto.h"
@@ -66,6 +67,17 @@ int main() {
     testeEmail.tearDown(email);
 
     cout << "Pressione enter para continuar ..." << endl;
+    getchar();
+
+
+    Custo custo;
+    TesteCusto testeCusto;
+
+    testeCusto.setUp(custo);
+    testeCusto.run(custo);
+    testeCusto.tearDown(custo);
+
+        cout << "Pressione enter para continuar ..." << endl;
     getchar();
 
 
