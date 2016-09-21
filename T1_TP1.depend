@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1474417614 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\codigoprojeto.cpp
+	"CodigoProjeto.h"
+	<string>
+	<stdexcept>
+	<iostream>
+
+1474423199 h:\unb\2016-2\técnicas de programação 1\t1_tp1\include\codigoprojeto.h
+	<string>
+	<stdexcept>
+
+1474458833 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\main.cpp
+	"CodigoProjeto.h"
+	"EstadoProjeto.h"
+	"FaseProjeto.h"
+	"Data.h"
+	"Nome.h"
+	<iostream>
+
+1474421967 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\estadoprojeto.cpp
+	"EstadoProjeto.h"
+	<iostream>
+
+1474420519 h:\unb\2016-2\técnicas de programação 1\t1_tp1\include\estadoprojeto.h
+	<stdexcept>
+
+1474423418 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\faseprojeto.cpp
+	"FaseProjeto.h"
+	<iostream>
+
+1474423453 h:\unb\2016-2\técnicas de programação 1\t1_tp1\include\faseprojeto.h
+	<stdexcept>
+
+1474423722 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\funcao.cpp
+	"Funcao.h"
+	<iostream>
+
+1474423676 h:\unb\2016-2\técnicas de programação 1\t1_tp1\include\funcao.h
+	<stdexcept>
+
+1474427257 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\data.cpp
+	"Data.h"
+	<iostream>
+
+1474427100 h:\unb\2016-2\técnicas de programação 1\t1_tp1\include\data.h
+	<stdexcept>
+	<string>
+
+1474458314 source:h:\unb\2016-2\técnicas de programação 1\t1_tp1\src\nome.cpp
+
+1474459128 h:\unb\2016-2\técnicas de programação 1\t1_tp1\include\nome.h
+	<string>
+	<stdexcept>
+
