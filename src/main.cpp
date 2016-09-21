@@ -1,6 +1,7 @@
 
 using namespace std;
 
+#include "Funcao.h"
 #include "Custo.h"
 #include "CodigoProjeto.h"
 #include "EstadoProjeto.h"
@@ -16,6 +17,46 @@ using namespace std;
 
 int main() {
 
+    CodigoProjeto codigoProjeto;
+    TesteCodigoProjeto testeCodP;
+
+    testeCodP.setUp(codigoProjeto);
+    testeCodP.run(codigoProjeto);
+    testeCodP.tearDown(codigoProjeto);
+
+    cout << "Pressione enter para continuar ..." << endl;
+    getchar();
+
+    Data data;
+    TesteData testeData;
+
+    testeData.setUp(data);
+    testeData.run(data);
+    testeData.tearDown(data);
+
+    cout << "Pressione enter para continuar ..." << endl;
+    getchar();
+
+    EstadoProjeto estadoProjeto;
+    TesteEstadoProjeto testeEstadoP;
+
+    testeEstadoP.setUp(estadoProjeto);
+    testeEstadoP.run(estadoProjeto);
+    testeEstadoP.tearDown(estadoProjeto);
+
+    cout << "Pressione enter para continuar ..." << endl;
+    getchar();
+
+    Funcao funcao;
+    TesteFuncao testeF;
+
+    testeF.setUp(funcao);
+    testeF.run(funcao);
+    testeF.tearDown(funcao);
+
+
+    cout << "Pressione enter para continuar ..." << endl;
+    getchar();
 
     // Testando Dominio Nome
     Nome b;
@@ -65,6 +106,17 @@ int main() {
     testeEmail.setUp(email);
     testeEmail.run(email);
     testeEmail.tearDown(email);
+
+    cout << "Pressione enter para continuar ..." << endl;
+    getchar();
+
+
+    FaseProjeto faseP;
+    TesteFaseProjeto testeFaseP;
+
+    testeFaseP.setUp(faseP);
+    testeFaseP.run(faseP);
+    testeFaseP.tearDown(faseP);
 
     cout << "Pressione enter para continuar ..." << endl;
     getchar();

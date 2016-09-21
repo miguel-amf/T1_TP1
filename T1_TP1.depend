@@ -148,7 +148,8 @@
 1474490396 c:\users\vitor\documents\t1_tp1\include\funcao.h
 	<stdexcept>
 
-1474498887 source:c:\users\vitor\documents\t1_tp1\src\main.cpp
+1474499693 source:c:\users\vitor\documents\t1_tp1\src\main.cpp
+	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
 	"EstadoProjeto.h"
