@@ -9,6 +9,7 @@ using namespace std;
 #include "Telefone.h"
 #include "Senha.h"
 #include "Matricula.h"
+#include "Email.h"
 #include <iostream>
 #include <stdio.h>
 
@@ -53,6 +54,16 @@ int main() {
     testeMatricula.setUp(matricula);
     testeMatricula.run(matricula);
     testeMatricula.tearDown(matricula);
+
+    cout << "Pressione enter para continuar ..." << endl;
+    getchar();
+
+    Email email;
+    TesteEmail testeEmail;
+
+    testeEmail.setUp(email);
+    testeEmail.run(email);
+    testeEmail.tearDown(email);
 
     cout << "Pressione enter para continuar ..." << endl;
     getchar();
