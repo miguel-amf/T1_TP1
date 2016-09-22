@@ -70,34 +70,41 @@
 	<stdexcept>
 	<string>
 
-1474421967 source:c:\users\mamfbr\documents\github\t1_tp1\src\estadoprojeto.cpp
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\estadoprojeto.cpp
 	"EstadoProjeto.h"
 	<iostream>
 
-1474420519 c:\users\mamfbr\documents\github\t1_tp1\include\estadoprojeto.h
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\estadoprojeto.h
 	<stdexcept>
 
 1474423418 source:c:\users\mamfbr\documents\github\t1_tp1\src\faseprojeto.cpp
 	"FaseProjeto.h"
 	<iostream>
 
-1474423453 c:\users\mamfbr\documents\github\t1_tp1\include\faseprojeto.h
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\faseprojeto.h
 	<stdexcept>
 
 1474471990 source:c:\users\mamfbr\documents\github\t1_tp1\src\funcao.cpp
 	"Funcao.h"
 	<iostream>
 
-1474423676 c:\users\mamfbr\documents\github\t1_tp1\include\funcao.h
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\funcao.h
 	<stdexcept>
 
-1474458833 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
+	"Funcao.h"
+	"Custo.h"
 	"CodigoProjeto.h"
 	"EstadoProjeto.h"
 	"FaseProjeto.h"
 	"Data.h"
 	"Nome.h"
+	"Telefone.h"
+	"Senha.h"
+	"Matricula.h"
+	"Email.h"
 	<iostream>
+	<stdio.h>
 
 1474471464 c:\users\mamfbr\documents\github\t1_tp1\include\nome.h
 	<string>
@@ -219,4 +226,51 @@
 
 1474498928 c:\users\vitor\documents\t1_tp1\include\custo.h
 	<stdexcept>
+
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\custo.cpp
+	"Custo.h"
+	<stdexcept>
+	<iostream>
+
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\custo.h
+	<stdexcept>
+
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\email.cpp
+	"Email.h"
+	<stdexcept>
+	<string>
+	<iostream>
+
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\email.h
+	<stdexcept>
+	<string>
+
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\telefone.h
+	<stdexcept>
+	<string>
+
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\senha.h
+	<string>
+	<stdexcept>
+
+1474503308 c:\users\mamfbr\documents\github\t1_tp1\include\matricula.h
+	<stdexcept>
+	<string>
+
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\matricula.cpp
+	"Matricula.h"
+	<stdexcept>
+	<string>
+	<iostream>
+
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\senha.cpp
+	"Senha.h"
+	<iostream>
+	<stdexcept>
+
+1474503308 source:c:\users\mamfbr\documents\github\t1_tp1\src\telefone.cpp
+	"Telefone.h"
+	<stdexcept>
+	<string>
+	<iostream>
 
