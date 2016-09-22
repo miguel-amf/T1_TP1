@@ -1,0 +1,15 @@
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/EstadoProjeto.h:28: warning: argument 'retorno' of command @param is not found in the argument list of EstadoProjeto::getEstado() const
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/EstadoProjeto.h:22: warning: argument 'entrada' of command @param is not found in the argument list of EstadoProjeto::setEstado(int)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/FaseProjeto.h:29: warning: argument 'retorno' of command @param is not found in the argument list of FaseProjeto::getFase() const
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/FaseProjeto.h:23: warning: argument 'entrada' of command @param is not found in the argument list of FaseProjeto::setFase(int)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/Funcao.h:29: warning: argument 'retorno' of command @param is not found in the argument list of Funcao::getFuncao() const
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/Funcao.h:23: warning: argument 'entrada' of command @param is not found in the argument list of Funcao::setFuncao(int)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/EstadoProjeto.h:76: warning: argument 'alvo' of command @param is not found in the argument list of TesteEstadoProjeto::run(EstadoProjeto)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/EstadoProjeto.h:58: warning: argument 'alvo' of command @param is not found in the argument list of TesteEstadoProjeto::setUp(EstadoProjeto)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/EstadoProjeto.h:67: warning: argument 'alvo' of command @param is not found in the argument list of TesteEstadoProjeto::tearDown(EstadoProjeto)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/FaseProjeto.h:77: warning: argument 'alvo' of command @param is not found in the argument list of TesteFaseProjeto::run(FaseProjeto)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/FaseProjeto.h:59: warning: argument 'alvo' of command @param is not found in the argument list of TesteFaseProjeto::setUp(FaseProjeto)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/FaseProjeto.h:68: warning: argument 'alvo' of command @param is not found in the argument list of TesteFaseProjeto::tearDown(FaseProjeto)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/Funcao.h:77: warning: argument 'alvo' of command @param is not found in the argument list of TesteFuncao::run(Funcao)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/Funcao.h:59: warning: argument 'alvo' of command @param is not found in the argument list of TesteFuncao::setUp(Funcao)
+H:/UnB/2016-2/Técnicas de Programação 1/T1_TP1/include/Funcao.h:68: warning: argument 'alvo' of command @param is not found in the argument list of TesteFuncao::tearDown(Funcao)

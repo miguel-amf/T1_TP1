@@ -34,15 +34,27 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="include/CodigoProjeto.h" />
+		<Unit filename="include/Custo.h" />
+		<Unit filename="include/Email.h" />
 		<Unit filename="include/EstadoProjeto.h" />
 		<Unit filename="include/FaseProjeto.h" />
 		<Unit filename="include/Funcao.h" />
+		<Unit filename="include/Matricula.h" />
+		<Unit filename="include/Nome.h" />
+		<Unit filename="include/Senha.h" />
+		<Unit filename="include/Telefone.h" />
 		<Unit filename="include/data.h" />
 		<Unit filename="src/CodigoProjeto.cpp" />
+		<Unit filename="src/Custo.cpp" />
 		<Unit filename="src/Data.cpp" />
+		<Unit filename="src/Email.cpp" />
 		<Unit filename="src/EstadoProjeto.cpp" />
 		<Unit filename="src/FaseProjeto.cpp" />
 		<Unit filename="src/Funcao.cpp" />
+		<Unit filename="src/Matricula.cpp" />
+		<Unit filename="src/Nome.cpp" />
+		<Unit filename="src/Senha.cpp" />
+		<Unit filename="src/Telefone.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<DoxyBlocks>
