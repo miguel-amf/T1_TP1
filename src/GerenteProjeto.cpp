@@ -2,5 +2,12 @@
 
 GerenteProjeto::GerenteProjeto()
 {
-    //ctor
+
+}
+
+Telefone GerenteProjeto::getTelefone(){
+    return telefone;
+}
+void GerenteProjeto::setTelefone(Telefone novoTelefone) throw (invalid_argument){
+    telefone = novoTelefone;
 }

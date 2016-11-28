@@ -14,9 +14,21 @@ using namespace std;
 #include "Email.h"
 #include <iostream>
 #include <stdio.h>
+#include "GerenteProjeto.h"
 
 int main() {
 
+    GerenteProjeto ge;
+    cout << "senha:" << ge.getSenha().getSenha() << endl;
+    cout << "mat:" << ge.getMatricula().getMatricula() << endl;
+    cout << "nome:" << ge.getNome().getNome() << endl;
+    cout << "tele:" << ge.getTelefone().getNumero() << endl;
+
+
+
+
+    //cod teste do t1
+    /*
     cout << "TRABALHO 1 PROGRAMACAO ORIENTADA A OBJETOS" << endl
          << "2016-2" << endl
          << "INTEGRANTES:" << endl
@@ -138,7 +150,7 @@ int main() {
 
         cout << "Pressione enter para continuar ..." << endl;
     getchar();
-
+    */
 
 
     return 0;

@@ -91,7 +91,7 @@
 1474506908 c:\users\mamfbr\documents\github\t1_tp1\include\funcao.h
 	<stdexcept>
 
-1474509819 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
+1480370912 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -105,6 +105,7 @@
 	"Email.h"
 	<iostream>
 	<stdio.h>
+	"GerenteProjeto.h"
 
 1474475064 c:\users\mamfbr\documents\github\t1_tp1\include\nome.h
 	<string>
@@ -274,13 +275,47 @@
 	<string>
 	<iostream>
 
-1480346946 source:c:\users\mamfbr\documents\github\t1_tp1\src\gerenteprojeto.cpp
+1480369983 source:c:\users\mamfbr\documents\github\t1_tp1\src\gerenteprojeto.cpp
 	"GerenteProjeto.h"
 
-1480347076 c:\users\mamfbr\documents\github\t1_tp1\include\gerenteprojeto.h
+1480369719 c:\users\mamfbr\documents\github\t1_tp1\include\gerenteprojeto.h
 	<stdexcept>
 	"Nome.h"
 	"Matricula.h"
 	"Telefone.h"
 	"Senha.h"
+	"Pessoa.h"
+
+1480347182 source:c:\users\mamfbr\documents\github\t1_tp1\src\gerentesistema.cpp
+	"GerenteSistema.h"
+
+1480371415 c:\users\mamfbr\documents\github\t1_tp1\include\gerentesistema.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+	"Pessoa.h"
+
+1480369547 source:c:\users\mamfbr\documents\github\t1_tp1\src\desenvolvedor.cpp
+	"Desenvolvedor.h"
+
+1480369543 c:\users\mamfbr\documents\github\t1_tp1\include\desenvolvedor.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+	"Email.h"
+	"Funcao.h"
+
+1480370731 c:\users\mamfbr\documents\github\t1_tp1\include\pessoa.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+
+1480370871 source:c:\users\mamfbr\documents\github\t1_tp1\src\pessoa.cpp
+	"Pessoa.h"
 

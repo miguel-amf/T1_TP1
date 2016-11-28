@@ -6,26 +6,21 @@
 #include "Matricula.h"
 #include "Telefone.h"
 #include "Senha.h"
+#include "Pessoa.h"
 
-class GerenteSistema
+
+/*
+Gerente de sistema basicamente eh uma Pessoa, mas manteremos
+assim para fins de abstração, afinal pode ser que
+um gerente ganhe atributos especiais ao longo da implementação ou
+evolucao do codigo.
+*/
+class GerenteSistema : public Pessoa
 {
     public:
         GerenteSistema();
 
-        Nome getNome();
-        void setNome(Nome) throw (invalid_argument);
-
-        Matricula getMatricula();
-        void setmatricula(Matricula) throw (invalid_argument);
-
-        Senha getSenha();
-        void setSenha(Senha) throw (invalid_argument);
-
-
     private:
-        Nome nome;
-        Matricula matricula;
-        Senha senha;
 };
 
 #endif // GERENTESISTEMA_H

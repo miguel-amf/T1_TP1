@@ -5,7 +5,18 @@ Desenvolvedor::Desenvolvedor()
     //ctor
 }
 
-Desenvolvedor::~Desenvolvedor()
-{
-    //dtor
+Email Desenvolvedor::getEmail() {
+    return email;
+}
+
+void Desenvolvedor::setEmail(Email novoEmail) {
+    email = novoEmail;
+}
+
+Funcao Desenvolvedor::getFuncao() {
+    return funcao;
+}
+
+void Desenvolvedor::setFuncao(Funcao novaFuncao) {
+    funcao = novaFuncao;
 }
