@@ -44,6 +44,7 @@
 		<Unit filename="include/GerenteSistema.h" />
 		<Unit filename="include/Matricula.h" />
 		<Unit filename="include/Nome.h" />
+		<Unit filename="include/Pessoa.h" />
 		<Unit filename="include/Senha.h" />
 		<Unit filename="include/Telefone.h" />
 		<Unit filename="include/data.h" />
@@ -59,6 +60,7 @@
 		<Unit filename="src/GerenteSistema.cpp" />
 		<Unit filename="src/Matricula.cpp" />
 		<Unit filename="src/Nome.cpp" />
+		<Unit filename="src/Pessoa.cpp" />
 		<Unit filename="src/Senha.cpp" />
 		<Unit filename="src/Telefone.cpp" />
 		<Unit filename="src/main.cpp" />
