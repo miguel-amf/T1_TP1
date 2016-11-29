@@ -44,6 +44,8 @@
 		<Unit filename="include/Funcao.h" />
 		<Unit filename="include/GerenteProjeto.h" />
 		<Unit filename="include/GerenteSistema.h" />
+		<Unit filename="include/MIU_Autenticacao.h" />
+		<Unit filename="include/MRN_Autenticacao.h" />
 		<Unit filename="include/Matricula.h" />
 		<Unit filename="include/Nome.h" />
 		<Unit filename="include/Pessoa.h" />
@@ -61,6 +63,8 @@
 		<Unit filename="src/Funcao.cpp" />
 		<Unit filename="src/GerenteProjeto.cpp" />
 		<Unit filename="src/GerenteSistema.cpp" />
+		<Unit filename="src/MIU_Autenticacao.cpp" />
+		<Unit filename="src/MRN_Autenticacao.cpp" />
 		<Unit filename="src/Matricula.cpp" />
 		<Unit filename="src/Nome.cpp" />
 		<Unit filename="src/Pessoa.cpp" />
