@@ -5,7 +5,7 @@
 
 Senha::Senha()
 {
-    senha = "HDNSJ";
+    senha = "ABCDE";
 }
 
 void Senha::setSenha(string entrada) throw(invalid_argument){

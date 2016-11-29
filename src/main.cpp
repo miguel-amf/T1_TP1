@@ -15,17 +15,39 @@ using namespace std;
 #include <iostream>
 #include <stdio.h>
 #include "GerenteProjeto.h"
+#include "MRN_Autenticacao.h"
 
 int main() {
 
-    GerenteProjeto ge;
-    cout << "senha:" << ge.getSenha().getSenha() << endl;
-    cout << "mat:" << ge.getMatricula().getMatricula() << endl;
-    cout << "nome:" << ge.getNome().getNome() << endl;
-    cout << "tele:" << ge.getTelefone().getNumero() << endl;
+    Matricula mat;
+    Senha senha;
+    MRN_Autenticacao  m_auth;
+    int acesso = -2;
 
+    try {
+        mat.setMatricula("12345");
+        acesso = m_auth.autenticar(mat,senha);
+        cout << acesso << endl;
+        mat.setMatricula("23456");
+        acesso = m_auth.autenticar(mat,senha);
+        cout << acesso << endl;
+        mat.setMatricula("34567");
+        acesso = m_auth.autenticar(mat,senha);
+        cout << acesso << endl;
+        mat.setMatricula("01234");
+        acesso = m_auth.autenticar(mat,senha);
+        cout << acesso << endl;
+        mat.setMatricula("45678");
+        acesso = m_auth.autenticar(mat,senha);
+        cout << acesso << endl;
 
-
+    }
+    catch (invalid_argument& erro) {
+        cout << erro.what() << endl;
+    }
+    catch (runtime_error& erro){
+        cout << erro.what() << endl;
+    }
 
     //cod teste do t1
     /*
