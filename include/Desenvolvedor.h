@@ -8,9 +8,10 @@
 #include "Senha.h"
 #include "Email.h"
 #include "Funcao.h"
+#include "Pessoa.h"
 
 
-class Desenvolvedor
+class Desenvolvedor:public Pessoa
 {
     public:
         Desenvolvedor();

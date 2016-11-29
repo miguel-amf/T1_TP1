@@ -91,7 +91,7 @@
 1474506908 c:\users\mamfbr\documents\github\t1_tp1\include\funcao.h
 	<stdexcept>
 
-1480370912 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
+1480450854 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -106,6 +106,8 @@
 	<iostream>
 	<stdio.h>
 	"GerenteProjeto.h"
+	"MRN_Autenticacao.h"
+	"MIU_Autenticacao.h"
 
 1474475064 c:\users\mamfbr\documents\github\t1_tp1\include\nome.h
 	<string>
@@ -264,7 +266,7 @@
 	<string>
 	<iostream>
 
-1474506908 source:c:\users\mamfbr\documents\github\t1_tp1\src\senha.cpp
+1480450854 source:c:\users\mamfbr\documents\github\t1_tp1\src\senha.cpp
 	"Senha.h"
 	<iostream>
 	<stdexcept>
@@ -275,7 +277,7 @@
 	<string>
 	<iostream>
 
-1480369983 source:c:\users\mamfbr\documents\github\t1_tp1\src\gerenteprojeto.cpp
+1480371507 source:c:\users\mamfbr\documents\github\t1_tp1\src\gerenteprojeto.cpp
 	"GerenteProjeto.h"
 
 1480369719 c:\users\mamfbr\documents\github\t1_tp1\include\gerenteprojeto.h
@@ -297,10 +299,10 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480369547 source:c:\users\mamfbr\documents\github\t1_tp1\src\desenvolvedor.cpp
+1480371766 source:c:\users\mamfbr\documents\github\t1_tp1\src\desenvolvedor.cpp
 	"Desenvolvedor.h"
 
-1480369543 c:\users\mamfbr\documents\github\t1_tp1\include\desenvolvedor.h
+1480455208 c:\users\mamfbr\documents\github\t1_tp1\include\desenvolvedor.h
 	<stdexcept>
 	"Nome.h"
 	"Matricula.h"
@@ -308,6 +310,7 @@
 	"Senha.h"
 	"Email.h"
 	"Funcao.h"
+	"Pessoa.h"
 
 1480370731 c:\users\mamfbr\documents\github\t1_tp1\include\pessoa.h
 	<stdexcept>
@@ -499,4 +502,45 @@
 
 1480442959 c:\users\vitor\tp1\t1_tp1\include\miu_autenticacao.h
 	"MRN_Autenticacao.h"
+
+1480450854 c:\users\mamfbr\documents\github\t1_tp1\include\mrn_autenticacao.h
+	"IRN_Autenticao.h"
+
+1480450854 c:\users\mamfbr\documents\github\t1_tp1\include\autenticacao\irn_autenticao.h
+	"Matricula.h"
+	"Senha.h"
+
+1480450854 c:\users\mamfbr\documents\github\t1_tp1\include\miu_autenticacao.h
+	"MRN_Autenticacao.h"
+
+1480450854 source:c:\users\mamfbr\documents\github\t1_tp1\src\miu_autenticacao.cpp
+	"MIU_Autenticacao.h"
+	<iostream>
+	"MRN_Autenticacao.h"
+	"Matricula.h"
+	"Senha.h"
+
+1480450854 source:c:\users\mamfbr\documents\github\t1_tp1\src\mrn_autenticacao.cpp
+	"MRN_Autenticacao.h"
+	"string.h"
+	"Matricula.h"
+	"Senha.h"
+
+1480457731 source:c:\users\mamfbr\documents\github\t1_tp1\src\projeto.cpp
+	"Projeto.h"
+	"Nome.h"
+	"CodigoProjeto.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"Data.h"
+	"Custo.h"
+	<cstdlib>
+
+1480457731 c:\users\mamfbr\documents\github\t1_tp1\include\projeto.h
+	"Nome.h"
+	"CodigoProjeto.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"Data.h"
+	"Custo.h"
 
