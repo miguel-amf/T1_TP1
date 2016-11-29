@@ -16,6 +16,7 @@ using namespace std;
 #include <stdio.h>
 #include "GerenteProjeto.h"
 #include "MRN_Autenticacao.h"
+#include "MIU_Autenticacao.h"
 
 int main() {
 
@@ -23,31 +24,11 @@ int main() {
     Senha senha;
     MRN_Autenticacao  m_auth;
     int acesso = -2;
+    MIU_Autenticacao gui_auth;
 
-    try {
-        mat.setMatricula("12345");
-        acesso = m_auth.autenticar(mat,senha);
-        cout << acesso << endl;
-        mat.setMatricula("23456");
-        acesso = m_auth.autenticar(mat,senha);
-        cout << acesso << endl;
-        mat.setMatricula("34567");
-        acesso = m_auth.autenticar(mat,senha);
-        cout << acesso << endl;
-        mat.setMatricula("01234");
-        acesso = m_auth.autenticar(mat,senha);
-        cout << acesso << endl;
-        mat.setMatricula("45678");
-        acesso = m_auth.autenticar(mat,senha);
-        cout << acesso << endl;
-
-    }
-    catch (invalid_argument& erro) {
-        cout << erro.what() << endl;
-    }
-    catch (runtime_error& erro){
-        cout << erro.what() << endl;
-    }
+    gui_auth.setMRN(&m_auth);
+    acesso = gui_auth.run();
+    cout << acesso;
 
     //cod teste do t1
     /*

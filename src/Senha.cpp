@@ -25,12 +25,12 @@ string Senha::getSenha() const{
 void Senha::avalia(string entrada) throw(invalid_argument) {
 
     if(entrada.length() != 5)
-        throw invalid_argument("nao possui 5 caracteres");
+        throw invalid_argument("A senha nao possui 5 caracteres");
 
     for(int j = 0; j<5; j++){
         for(int i = j + 1; i<5; i++) {
             if (entrada[i] == entrada[j])
-                throw invalid_argument("ha caracteres iguais");
+                throw invalid_argument("A senha possui caracteres iguais");
         }
     }
 }

@@ -433,7 +433,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480441911 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480444222 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -449,6 +449,7 @@
 	<stdio.h>
 	"GerenteProjeto.h"
 	"MRN_Autenticacao.h"
+	"MIU_Autenticacao.h"
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\matricula.cpp
 	"Matricula.h"
@@ -465,7 +466,7 @@
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\pessoa.cpp
 	"Pessoa.h"
 
-1480441185 source:c:\users\vitor\tp1\t1_tp1\src\senha.cpp
+1480444558 source:c:\users\vitor\tp1\t1_tp1\src\senha.cpp
 	"Senha.h"
 	<iostream>
 	<stdexcept>
@@ -488,4 +489,14 @@
 1480439870 c:\users\vitor\tp1\t1_tp1\include\autenticacao\irn_autenticao.h
 	"Matricula.h"
 	"Senha.h"
+
+1480444443 source:c:\users\vitor\tp1\t1_tp1\src\miu_autenticacao.cpp
+	"MIU_Autenticacao.h"
+	<iostream>
+	"MRN_Autenticacao.h"
+	"Matricula.h"
+	"Senha.h"
+
+1480442959 c:\users\vitor\tp1\t1_tp1\include\miu_autenticacao.h
+	"MRN_Autenticacao.h"
 
