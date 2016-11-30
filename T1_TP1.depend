@@ -91,7 +91,7 @@
 1474506908 c:\users\mamfbr\documents\github\t1_tp1\include\funcao.h
 	<stdexcept>
 
-1480450854 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
+1480511457 source:c:\users\mamfbr\documents\github\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -108,6 +108,8 @@
 	"GerenteProjeto.h"
 	"MRN_Autenticacao.h"
 	"MIU_Autenticacao.h"
+	"Projeto.h"
+	"IRN_Projetos.h"
 
 1474475064 c:\users\mamfbr\documents\github\t1_tp1\include\nome.h
 	<string>
@@ -526,7 +528,7 @@
 	"Matricula.h"
 	"Senha.h"
 
-1480457731 source:c:\users\mamfbr\documents\github\t1_tp1\src\projeto.cpp
+1480510075 source:c:\users\mamfbr\documents\github\t1_tp1\src\projeto.cpp
 	"Projeto.h"
 	"Nome.h"
 	"CodigoProjeto.h"
@@ -536,11 +538,13 @@
 	"Custo.h"
 	<cstdlib>
 
-1480457731 c:\users\mamfbr\documents\github\t1_tp1\include\projeto.h
+1480510457 c:\users\mamfbr\documents\github\t1_tp1\include\projeto.h
 	"Nome.h"
 	"CodigoProjeto.h"
 	"GerenteProjeto.h"
 	"Desenvolvedor.h"
 	"Data.h"
 	"Custo.h"
+
+1480512420 c:\users\mamfbr\documents\github\t1_tp1\include\irn_projetos.h
 

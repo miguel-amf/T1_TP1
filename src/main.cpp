@@ -17,6 +17,8 @@ using namespace std;
 #include "GerenteProjeto.h"
 #include "MRN_Autenticacao.h"
 #include "MIU_Autenticacao.h"
+#include "Projeto.h"
+#include "IRN_Projetos.h"
 
 int main() {
 
@@ -29,6 +31,9 @@ int main() {
     gui_auth.setMRN(&m_auth);
     acesso = gui_auth.run();
     cout << acesso;
+
+
+
 
     //cod teste do t1
     /*

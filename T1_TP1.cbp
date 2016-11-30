@@ -37,6 +37,7 @@
 		</Compiler>
 		<Unit filename="include/CodigoProjeto.h" />
 		<Unit filename="include/Custo.h" />
+		<Unit filename="include/Data.h" />
 		<Unit filename="include/Desenvolvedor.h" />
 		<Unit filename="include/Email.h" />
 		<Unit filename="include/EstadoProjeto.h" />
@@ -44,15 +45,16 @@
 		<Unit filename="include/Funcao.h" />
 		<Unit filename="include/GerenteProjeto.h" />
 		<Unit filename="include/GerenteSistema.h" />
+		<Unit filename="include/IRN_Projetos.h" />
 		<Unit filename="include/MIU_Autenticacao.h" />
 		<Unit filename="include/MRN_Autenticacao.h" />
 		<Unit filename="include/Matricula.h" />
 		<Unit filename="include/Nome.h" />
 		<Unit filename="include/Pessoa.h" />
+		<Unit filename="include/Projeto.h" />
 		<Unit filename="include/Senha.h" />
 		<Unit filename="include/Telefone.h" />
 		<Unit filename="include/autenticacao/IRN_Autenticao.h" />
-		<Unit filename="include/data.h" />
 		<Unit filename="src/CodigoProjeto.cpp" />
 		<Unit filename="src/Custo.cpp" />
 		<Unit filename="src/Data.cpp" />
@@ -68,6 +70,7 @@
 		<Unit filename="src/Matricula.cpp" />
 		<Unit filename="src/Nome.cpp" />
 		<Unit filename="src/Pessoa.cpp" />
+		<Unit filename="src/Projeto.cpp" />
 		<Unit filename="src/Senha.cpp" />
 		<Unit filename="src/Telefone.cpp" />
 		<Unit filename="src/main.cpp" />
