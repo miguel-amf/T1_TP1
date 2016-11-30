@@ -10,7 +10,7 @@ MIU_Autenticacao::MIU_Autenticacao()
     MRN = NULL;
 }
 
-void MIU_Autenticacao::setMRN(MRN_Autenticacao* novoMRN){
+void MIU_Autenticacao::setMRN(IRN_Autenticao* novoMRN){
     MRN = novoMRN;
 }
 

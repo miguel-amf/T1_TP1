@@ -7,10 +7,10 @@ class MIU_Autenticacao
 {
     public:
         MIU_Autenticacao();
-        void setMRN(MRN_Autenticacao*);
+        void setMRN(IRN_Autenticao*);
         int run();
     private:
-        MRN_Autenticacao* MRN;
+        IRN_Autenticao* MRN;
 
 };
 

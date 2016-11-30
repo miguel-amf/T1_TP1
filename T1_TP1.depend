@@ -353,7 +353,7 @@
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\desenvolvedor.cpp
 	"Desenvolvedor.h"
 
-1480437022 c:\users\vitor\tp1\t1_tp1\include\desenvolvedor.h
+1480512059 c:\users\vitor\tp1\t1_tp1\include\desenvolvedor.h
 	<stdexcept>
 	"Nome.h"
 	"Matricula.h"
@@ -361,6 +361,7 @@
 	"Senha.h"
 	"Email.h"
 	"Funcao.h"
+	"Pessoa.h"
 
 1480437022 c:\users\vitor\tp1\t1_tp1\include\nome.h
 	<string>
@@ -438,7 +439,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480444222 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480512059 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -455,6 +456,8 @@
 	"GerenteProjeto.h"
 	"MRN_Autenticacao.h"
 	"MIU_Autenticacao.h"
+	"Projeto.h"
+	"IRN_Projetos.h"
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\matricula.cpp
 	"Matricula.h"
@@ -491,18 +494,18 @@
 1480440052 c:\users\vitor\tp1\t1_tp1\include\mrn_autenticacao.h
 	"IRN_Autenticao.h"
 
-1480439870 c:\users\vitor\tp1\t1_tp1\include\autenticacao\irn_autenticao.h
+1480512788 c:\users\vitor\tp1\t1_tp1\include\autenticacao\irn_autenticao.h
 	"Matricula.h"
 	"Senha.h"
 
-1480444443 source:c:\users\vitor\tp1\t1_tp1\src\miu_autenticacao.cpp
+1480512575 source:c:\users\vitor\tp1\t1_tp1\src\miu_autenticacao.cpp
 	"MIU_Autenticacao.h"
 	<iostream>
 	"MRN_Autenticacao.h"
 	"Matricula.h"
 	"Senha.h"
 
-1480442959 c:\users\vitor\tp1\t1_tp1\include\miu_autenticacao.h
+1480512646 c:\users\vitor\tp1\t1_tp1\include\miu_autenticacao.h
 	"MRN_Autenticacao.h"
 
 1480450854 c:\users\mamfbr\documents\github\t1_tp1\include\mrn_autenticacao.h
@@ -547,4 +550,24 @@
 	"Custo.h"
 
 1480512420 c:\users\mamfbr\documents\github\t1_tp1\include\irn_projetos.h
+
+1480512059 c:\users\vitor\tp1\t1_tp1\include\projeto.h
+	"Nome.h"
+	"CodigoProjeto.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"Data.h"
+	"Custo.h"
+
+1480512059 c:\users\vitor\tp1\t1_tp1\include\irn_projetos.h
+
+1480512059 source:c:\users\vitor\tp1\t1_tp1\src\projeto.cpp
+	"Projeto.h"
+	"Nome.h"
+	"CodigoProjeto.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"Data.h"
+	"Custo.h"
+	<cstdlib>
 
