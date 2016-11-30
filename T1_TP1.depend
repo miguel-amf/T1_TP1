@@ -439,7 +439,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480512059 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480519550 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -458,6 +458,7 @@
 	"MIU_Autenticacao.h"
 	"Projeto.h"
 	"IRN_Projetos.h"
+	"MRN_Pessoa.h"
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\matricula.cpp
 	"Matricula.h"
@@ -570,4 +571,14 @@
 	"Data.h"
 	"Custo.h"
 	<cstdlib>
+
+1480519150 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
+	<IRN_Pessoa.h>
+
+1480519142 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
+	"Pessoa.h"
+	"Matricula.h"
+
+1480519870 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
+	"MRN_Pessoa.h"
 

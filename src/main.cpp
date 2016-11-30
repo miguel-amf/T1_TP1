@@ -19,18 +19,17 @@ using namespace std;
 #include "MIU_Autenticacao.h"
 #include "Projeto.h"
 #include "IRN_Projetos.h"
+#include "MRN_Pessoa.h"
 
 int main() {
 
     Matricula mat;
-    Senha senha;
-    MRN_Autenticacao  m_auth;
-    int acesso = -2;
-    MIU_Autenticacao gui_auth;
+    MRN_Pessoa m_pessoa;
+    Pessoa* result;
 
-    gui_auth.setMRN(&m_auth);
-    acesso = gui_auth.run();
-    cout << acesso;
+    mat.setMatricula("13345");
+    result = m_pessoa.todasPessoas();
+    cout << result[0].getMatricula().getMatricula() << endl;
 
 
 
