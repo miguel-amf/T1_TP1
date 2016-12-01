@@ -515,10 +515,10 @@
 	"Matricula.h"
 	"Senha.h"
 
-1480450854 c:\users\mamfbr\documents\github\t1_tp1\include\miu_autenticacao.h
+1480578765 c:\users\mamfbr\documents\github\t1_tp1\include\miu_autenticacao.h
 	"MRN_Autenticacao.h"
 
-1480450854 source:c:\users\mamfbr\documents\github\t1_tp1\src\miu_autenticacao.cpp
+1480578765 source:c:\users\mamfbr\documents\github\t1_tp1\src\miu_autenticacao.cpp
 	"MIU_Autenticacao.h"
 	<iostream>
 	"MRN_Autenticacao.h"
@@ -549,7 +549,9 @@
 	"Data.h"
 	"Custo.h"
 
-1480512420 c:\users\mamfbr\documents\github\t1_tp1\include\irn_projetos.h
+1480623954 c:\users\mamfbr\documents\github\t1_tp1\include\irn_projetos.h
+	<stdexcept>
+	<Projeto.h>
 
 1480512059 c:\users\vitor\tp1\t1_tp1\include\projeto.h
 	"Nome.h"
