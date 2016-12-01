@@ -22,8 +22,6 @@ class Desenvolvedor:public Pessoa
         Funcao getFuncao();
         void setFuncao(Funcao);
 
-
-
     private:
         Email email;
         Funcao funcao;

@@ -12,14 +12,14 @@ class Pessoa
     public:
         Pessoa();
 
-        Nome getNome();
-        void setNome(Nome) throw (invalid_argument);
+        virtual Nome getNome();
+        virtual void setNome(Nome) throw (invalid_argument);
 
-        Matricula getMatricula();
-        void setMatricula(Matricula) throw (invalid_argument);
+        virtual Matricula getMatricula();
+        virtual void setMatricula(Matricula) throw (invalid_argument);
 
-        Senha getSenha();
-        void setSenha(Senha) throw (invalid_argument);
+        virtual Senha getSenha();
+        virtual void setSenha(Senha) throw (invalid_argument);
 
 
     private:

@@ -8,7 +8,7 @@ class MIU_Autenticacao
     public:
         MIU_Autenticacao();
         void setMRN(IRN_Autenticao*);
-        int run();
+        Pessoa* run();
     private:
         IRN_Autenticao* MRN;
 

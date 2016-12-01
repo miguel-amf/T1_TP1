@@ -350,10 +350,10 @@
 	<stdexcept>
 	<string>
 
-1480437022 source:c:\users\vitor\tp1\t1_tp1\src\desenvolvedor.cpp
+1480616555 source:c:\users\vitor\tp1\t1_tp1\src\desenvolvedor.cpp
 	"Desenvolvedor.h"
 
-1480512059 c:\users\vitor\tp1\t1_tp1\include\desenvolvedor.h
+1480616562 c:\users\vitor\tp1\t1_tp1\include\desenvolvedor.h
 	<stdexcept>
 	"Nome.h"
 	"Matricula.h"
@@ -421,7 +421,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480437022 c:\users\vitor\tp1\t1_tp1\include\pessoa.h
+1480617235 c:\users\vitor\tp1\t1_tp1\include\pessoa.h
 	<stdexcept>
 	"Nome.h"
 	"Matricula.h"
@@ -439,7 +439,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480519550 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480624006 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -459,6 +459,8 @@
 	"Projeto.h"
 	"IRN_Projetos.h"
 	"MRN_Pessoa.h"
+	"MIU_Pessoa.h"
+	<vector>
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\matricula.cpp
 	"Matricula.h"
@@ -472,7 +474,7 @@
 	<stdexcept>
 	<iostream>
 
-1480437022 source:c:\users\vitor\tp1\t1_tp1\src\pessoa.cpp
+1480617180 source:c:\users\vitor\tp1\t1_tp1\src\pessoa.cpp
 	"Pessoa.h"
 
 1480444558 source:c:\users\vitor\tp1\t1_tp1\src\senha.cpp
@@ -492,21 +494,23 @@
 	"Matricula.h"
 	"Senha.h"
 
-1480440052 c:\users\vitor\tp1\t1_tp1\include\mrn_autenticacao.h
+1480622956 c:\users\vitor\tp1\t1_tp1\include\mrn_autenticacao.h
 	"IRN_Autenticao.h"
+	"Pessoa.h"
 
-1480512788 c:\users\vitor\tp1\t1_tp1\include\autenticacao\irn_autenticao.h
+1480623621 c:\users\vitor\tp1\t1_tp1\include\autenticacao\irn_autenticao.h
 	"Matricula.h"
 	"Senha.h"
+	"Pessoa.h"
 
-1480512575 source:c:\users\vitor\tp1\t1_tp1\src\miu_autenticacao.cpp
+1480623435 source:c:\users\vitor\tp1\t1_tp1\src\miu_autenticacao.cpp
 	"MIU_Autenticacao.h"
 	<iostream>
 	"MRN_Autenticacao.h"
 	"Matricula.h"
 	"Senha.h"
 
-1480512646 c:\users\vitor\tp1\t1_tp1\include\miu_autenticacao.h
+1480622798 c:\users\vitor\tp1\t1_tp1\include\miu_autenticacao.h
 	"MRN_Autenticacao.h"
 
 1480450854 c:\users\mamfbr\documents\github\t1_tp1\include\mrn_autenticacao.h
@@ -572,13 +576,34 @@
 	"Custo.h"
 	<cstdlib>
 
-1480519150 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
+1480618591 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
 	<IRN_Pessoa.h>
+	<vector>
 
-1480519142 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
+1480618617 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
 	"Pessoa.h"
 	"Matricula.h"
+	<vector>
 
-1480519870 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
+1480618739 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
 	"MRN_Pessoa.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"GerenteSistema.h"
+
+1480622724 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
+	"MIU_Pessoa.h"
+	"Pessoa.h"
+	<iostream>
+	<vector>
+	<typeinfo>
+	"Desenvolvedor.h"
+
+1480624079 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
+	"Matricula.h"
+	"IRN_Pessoa.h"
+	"Pessoa.h"
+	"Desenvolvedor.h"
+	"GerenteProjeto.h"
+	"GerenteSistema.h"
 

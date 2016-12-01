@@ -14,14 +14,14 @@ void MIU_Autenticacao::setMRN(IRN_Autenticao* novoMRN){
     MRN = novoMRN;
 }
 
-int MIU_Autenticacao::run(){
+Pessoa* MIU_Autenticacao::run(){
     Matricula mat;
     Senha senha;
     string novaMat;
     string novaSenha;
-    int permission = -1;
+    Pessoa* usuario = NULL;
 
-    while(permission == -1){
+    while(usuario == NULL){
         try{
             cout << "Insira sua matricula para logar:";
             cin >> novaMat;
@@ -32,8 +32,8 @@ int MIU_Autenticacao::run(){
             senha.setSenha(novaSenha);
 
             if(MRN){
-                permission = MRN->autenticar(mat,senha);
-                if(permission == -1){
+                usuario = MRN->autenticar(mat,senha);
+                if(usuario == NULL){
                     cout << "Login ou senha invalidos" << endl << endl;
                 }
             } else {
@@ -50,5 +50,5 @@ int MIU_Autenticacao::run(){
     }
 
     // MRN.autrn
-    return permission;
+    return usuario;
 }

@@ -2,7 +2,9 @@
 #define MRN_PESSOA_H
 
 #include <IRN_Pessoa.h>
+#include <vector>
 
+using namespace std;
 
 class MRN_Pessoa:public IRN_Pessoa
 {
@@ -11,7 +13,9 @@ class MRN_Pessoa:public IRN_Pessoa
         void cadastrarPessoa(Pessoa) throw (runtime_error);
         bool deletarGerente(Matricula mat) throw (runtime_error);
         bool deletarDesenvolvedor(Matricula) throw (runtime_error);
-        Pessoa* todasPessoas() throw (runtime_error);
+        vector<Pessoa>* todasPessoas() throw (runtime_error);
+        Pessoa* getPessoa(Matricula) throw (runtime_error);
+        void deletarPessoa(Matricula) throw (runtime_error);
 
 };
 

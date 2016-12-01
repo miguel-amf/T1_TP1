@@ -20,17 +20,21 @@ using namespace std;
 #include "Projeto.h"
 #include "IRN_Projetos.h"
 #include "MRN_Pessoa.h"
+#include "MIU_Pessoa.h"
+#include <vector>
 
 int main() {
 
-    Matricula mat;
+    MIU_Autenticacao gui_auth;
+    MRN_Autenticacao m_auth;
+
+    gui_auth.setMRN(&m_auth);
     MRN_Pessoa m_pessoa;
-    Pessoa* result;
+    Pessoa* usuario = gui_auth.run();
+    MIU_Pessoa iu_pessoa(usuario);
 
-    mat.setMatricula("13345");
-    result = m_pessoa.todasPessoas();
-    cout << result[0].getMatricula().getMatricula() << endl;
-
+    iu_pessoa.setMRN(&m_pessoa);
+    iu_pessoa.menu(1);
 
 
 

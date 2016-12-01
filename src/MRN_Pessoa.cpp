@@ -1,5 +1,9 @@
 #include "MRN_Pessoa.h"
 
+#include "GerenteProjeto.h"
+#include "Desenvolvedor.h"
+#include "GerenteSistema.h"
+
 MRN_Pessoa::MRN_Pessoa()
 {
     //ctor
@@ -25,19 +29,84 @@ bool MRN_Pessoa::deletarDesenvolvedor(Matricula mat) throw (runtime_error){
     }
     return true;
 }
-Pessoa* MRN_Pessoa::todasPessoas() throw (runtime_error){
+vector<Pessoa>* MRN_Pessoa::todasPessoas() throw (runtime_error){
     Matricula mat;
-    Pessoa* arr;
-    arr = new Pessoa[5];
-    mat.setMatricula("00000");
-    arr[0].setMatricula(mat);
-    mat.setMatricula("11111");
-    arr[1].setMatricula(mat);
-    mat.setMatricula("22222");
-    arr[2].setMatricula(mat);
+    vector<Pessoa>* arr = new vector<Pessoa>;
+    GerenteProjeto  gerente;
+    Desenvolvedor dev;
+    Telefone tel;
+    Nome nome;
+    Email email;
+    Funcao func;
+    GerenteSistema admin;
+
+    mat.setMatricula("12345");
+    gerente.setMatricula(mat);
+    nome.setNome("Daniel Luz");
+    gerente.setNome(nome);
+    tel.setNumero("99991234");
+    gerente.setTelefone(tel);
+    arr->push_back(gerente);
+
+    mat.setMatricula("23456");
+    nome.setNome("Miguel Angelo");
+    admin.setNome(nome);
+    admin.setMatricula(mat);
+    arr->push_back(admin);
+
     mat.setMatricula("33333");
-    arr[3].setMatricula(mat);
-    mat.setMatricula("44444");
-    arr[4].setMatricula(mat);
+    dev.setMatricula(mat);
+    nome.setNome("Uriel Silva");
+    dev.setNome(nome);
+    email.setEmail("udiel@gmail.com");
+    dev.setEmail(email);
+    func.setFuncao(1);
+    dev.setFuncao(func);
+    arr->push_back(dev);
+
+
+
     return arr;
+}
+
+Pessoa* MRN_Pessoa::getPessoa(Matricula mat) throw (runtime_error) {
+    GerenteProjeto* gerente = new GerenteProjeto;
+    Desenvolvedor* dev = new Desenvolvedor;
+    GerenteSistema* admin = new GerenteSistema;
+    Telefone tel;
+    Nome nome;
+    Email email;
+    Funcao func;
+
+    try {
+        if(!mat.getMatricula().compare("12345")){
+            gerente->setMatricula(mat);
+            nome.setNome("Daniel Luz");
+            gerente->setNome(nome);
+            tel.setNumero("99991234");
+            gerente->setTelefone(tel);
+            return gerente;
+        } else if (!mat.getMatricula().compare("23456")) {
+            nome.setNome("Miguel Angelo");
+            admin->setNome(nome);
+            admin->setMatricula(mat);
+            return admin;
+        } else {
+            dev->setMatricula(mat);
+            nome.setNome("Uriel Silva");
+            dev->setNome(nome);
+            email.setEmail("udiel@gmail.com");
+            dev->setEmail(email);
+            func.setFuncao(1);
+            dev->setFuncao(func);
+            return dev;
+        }
+    }
+    catch (invalid_argument* error){
+        throw error;
+    }
+}
+
+void MRN_Pessoa::deletarPessoa(Matricula mat) throw (runtime_error){
+
 }

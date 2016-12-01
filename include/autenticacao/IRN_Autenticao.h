@@ -3,10 +3,12 @@
 
 #include "Matricula.h"
 #include "Senha.h"
+#include "Pessoa.h"
+
 class IRN_Autenticao
 {
     public:
-        virtual int autenticar(Matricula,Senha)  throw(runtime_error) = 0;
+        virtual Pessoa* autenticar(Matricula,Senha)  throw(runtime_error) = 0;
 
 };
 
