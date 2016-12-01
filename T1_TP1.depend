@@ -439,7 +439,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480624006 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480633805 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -488,11 +488,18 @@
 	<string>
 	<iostream>
 
-1480441019 source:c:\users\vitor\tp1\t1_tp1\src\mrn_autenticacao.cpp
+1480624286 source:c:\users\vitor\tp1\t1_tp1\src\mrn_autenticacao.cpp
 	"MRN_Autenticacao.h"
 	"string.h"
 	"Matricula.h"
 	"Senha.h"
+	"GerenteProjeto.h"
+	"GerenteSistema.h"
+	"Email.h"
+	"Nome.h"
+	"Telefone.h"
+	"Funcao.h"
+	"Desenvolvedor.h"
 
 1480622956 c:\users\vitor\tp1\t1_tp1\include\mrn_autenticacao.h
 	"IRN_Autenticao.h"
@@ -576,22 +583,22 @@
 	"Custo.h"
 	<cstdlib>
 
-1480618591 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
+1480628807 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
 	<IRN_Pessoa.h>
 	<vector>
 
-1480618617 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
+1480628784 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
 	"Pessoa.h"
 	"Matricula.h"
 	<vector>
 
-1480618739 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
+1480628445 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
 	"MRN_Pessoa.h"
 	"GerenteProjeto.h"
 	"Desenvolvedor.h"
 	"GerenteSistema.h"
 
-1480622724 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
+1480633518 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
 	"MIU_Pessoa.h"
 	"Pessoa.h"
 	<iostream>
@@ -599,7 +606,7 @@
 	<typeinfo>
 	"Desenvolvedor.h"
 
-1480624079 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
+1480630580 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
 	"Matricula.h"
 	"IRN_Pessoa.h"
 	"Pessoa.h"

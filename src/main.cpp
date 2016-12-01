@@ -23,6 +23,16 @@ using namespace std;
 #include "MIU_Pessoa.h"
 #include <vector>
 
+int getPermissao(Pessoa* usuario){
+    if(dynamic_cast<Desenvolvedor*>(usuario)){
+        return 0;
+    } else if(dynamic_cast<GerenteProjeto*>(usuario)){
+        return 1;
+    } else if(dynamic_cast<GerenteSistema*>(usuario)){
+        return 2;
+    }
+}
+
 int main() {
 
     MIU_Autenticacao gui_auth;
@@ -31,10 +41,12 @@ int main() {
     gui_auth.setMRN(&m_auth);
     MRN_Pessoa m_pessoa;
     Pessoa* usuario = gui_auth.run();
-    MIU_Pessoa iu_pessoa(usuario);
+    int permissao = getPermissao(usuario);
+
+    MIU_Pessoa iu_pessoa(usuario,permissao);
 
     iu_pessoa.setMRN(&m_pessoa);
-    iu_pessoa.menu(1);
+    iu_pessoa.menu();
 
 
 

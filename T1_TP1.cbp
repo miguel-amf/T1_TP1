@@ -47,6 +47,7 @@
 		<Unit filename="include/IRN_Pessoa.h" />
 		<Unit filename="include/IRN_Projetos.h" />
 		<Unit filename="include/MIU_Autenticacao.h" />
+		<Unit filename="include/MIU_Pessoa.h" />
 		<Unit filename="include/MRN_Autenticacao.h" />
 		<Unit filename="include/MRN_Pessoa.h" />
 		<Unit filename="include/Matricula.h" />
@@ -68,6 +69,7 @@
 		<Unit filename="src/GerenteProjeto.cpp" />
 		<Unit filename="src/GerenteSistema.cpp" />
 		<Unit filename="src/MIU_Autenticacao.cpp" />
+		<Unit filename="src/MIU_Pessoa.cpp" />
 		<Unit filename="src/MRN_Autenticacao.cpp" />
 		<Unit filename="src/MRN_Pessoa.cpp" />
 		<Unit filename="src/Matricula.cpp" />

@@ -107,6 +107,6 @@ Pessoa* MRN_Pessoa::getPessoa(Matricula mat) throw (runtime_error) {
     }
 }
 
-void MRN_Pessoa::deletarPessoa(Matricula mat) throw (runtime_error){
-
+bool MRN_Pessoa::deletarPessoa(Matricula mat) throw (runtime_error){
+    return true;
 }

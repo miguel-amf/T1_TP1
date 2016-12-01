@@ -7,22 +7,40 @@
 #include "Desenvolvedor.h"
 #define MENU_SIZE 2
 
-MIU_Pessoa::MIU_Pessoa(Pessoa* pessoa){
+MIU_Pessoa::MIU_Pessoa(Pessoa* pessoa, int codigo){
     usuario = pessoa;
+    permissao = codigo;
 }
 
-void MIU_Pessoa::menu(int permissao){
+void MIU_Pessoa::setMRN(IRN_Pessoa* novoMRN){
+    MRN = novoMRN;
+}
+
+void MIU_Pessoa::menu(){
     int option = -1;
     vector<string> actual; // Será atribuido as funcionalidades permitidas
-    vector<string> dev; // Desenvolvedor
+    vector<string> base; // Acoes basicas a todos e Desenvolvedor
     vector<string> gerente; // Gerente de projeto
     vector<string> admin; // Gerente de sistema
     string result;
 
-    dev.push_back("Sair");
-    dev.push_back("Listar");
+    base.push_back("Sair");
+    base.push_back("Listar");
 
-    actual = dev;
+    gerente = base;
+    gerente.push_back("Cadastrar Desenvolvedor");
+
+
+    admin = base;
+    admin.push_back("Cadastrar Gerente de Projetos");
+
+
+    actual = base;
+    if(permissao == 1){
+        actual = gerente;
+    } else if(permissao == 2 ){
+        actual = admin;
+    }
 
     while (option != 0){
         for (int i = 0; i< actual.size(); i++){
@@ -31,10 +49,17 @@ void MIU_Pessoa::menu(int permissao){
         cout << "Escolha uma opcao: ";
         cin >> option;
 
-        result = actual.at(option);
-        if(!result.compare("Listar")){
-            MIU_Pessoa::listar();
+        if(option >= 0 && option <= actual.size()){
+            result = actual.at(option);
+            if(!result.compare("Listar")){
+                MIU_Pessoa::listar();
+            } else if(!result.compare("Cadastrar Desenvolvedor")){
+                MIU_Pessoa::criarDesenvolvedor();
+            } else if(!result.compare("Cadastrar Gerente de Projetos")){
+                MIU_Pessoa::criarGerente();
+            }
         }
+
     }
 }
 
@@ -58,6 +83,7 @@ void MIU_Pessoa::listar(){
 
 void MIU_Pessoa::exibir(Matricula mat){
     Pessoa* pessoa;
+    int option;
 
     try {
         pessoa = MRN->getPessoa(mat);
@@ -82,8 +108,25 @@ void MIU_Pessoa::exibir(Matricula mat){
                     cout << "Error" << endl;
                     break;
             }
+
+            if( permissao == 1 ){
+                cout << "0 -> Sair" << endl;
+                cout << "1 -> deletar" << endl;
+                cin >> option;
+                if (option == 1){
+                    MIU_Pessoa::deletarPessoa(pessoa->getMatricula());
+                }
+            }
         } else if (GerenteProjeto* gerente = dynamic_cast<GerenteProjeto*>(pessoa)){
             cout << "Telefone: " << gerente->getTelefone().getNumero() << endl;
+            if( permissao == 2 ){
+                cout << "0 -> Sair" << endl;
+                cout << "1 -> deletar" << endl;
+                cin >> option;
+                if (option == 1){
+                    MIU_Pessoa::deletarPessoa(pessoa->getMatricula());
+                }
+            }
         }
         cout << endl << endl;
     } catch (runtime_error error) {
@@ -94,6 +137,81 @@ void MIU_Pessoa::exibir(Matricula mat){
     }
 }
 
-void MIU_Pessoa::setMRN(IRN_Pessoa* novoMRN){
-    MRN = novoMRN;
+void MIU_Pessoa::deletarPessoa(Matricula mat){
+    if(MRN->deletarPessoa(mat)){
+        cout << "Usuario deletado com sucesso." << endl << endl;
+    } else {
+        cout << "Usuario não pode ser deletado, pois esta em projetos ativos!"<< endl << endl;
+    }
+}
+
+void MIU_Pessoa::criarDesenvolvedor(){
+    string input;
+    bool repeat = true;
+    Desenvolvedor pessoa;
+    Nome nome;
+    Matricula mat;
+    Email email;
+    Funcao func;
+    int fun = 0;
+
+    while (repeat){
+        try {
+            cout << endl << "Insira o Nome da pessoa: " << endl;
+            cin >> input;
+            nome.setNome(input);
+            pessoa.setNome(nome);
+            repeat = false;
+        } catch (invalid_argument error){
+            cout << error.what() << endl;
+        }
+    }
+    repeat = true;
+
+    while (repeat){
+        try {
+            cout << endl << "Insira a matricula: " << endl;
+            cin >> input;
+            mat.setMatricula(input);
+            pessoa.setMatricula(mat);
+            repeat = false;
+        } catch (invalid_argument error){
+            cout << error.what() << endl;
+        }
+    }
+    repeat = true;
+    while (repeat){
+        try {
+            cout << endl << "Insira o email da pessoa: " << endl;
+            cin >> input;
+            email.setEmail(input);
+            pessoa.setEmail(email);
+            repeat = false;
+        } catch (invalid_argument error){
+            cout << error.what() << endl;
+        }
+    }
+    while (!fun){
+        try {
+            cout << endl << "Escolha a funcao do desenvolvedor: " << endl;
+            cout << "1 -> Analista" << endl;
+            cout << "2 -> Projetista" << endl;
+            cout << "3 -> Programador" << endl;
+            cin >> fun;
+
+            func.setFuncao(fun);
+            pessoa.setFuncao(func);
+        } catch (invalid_argument error){
+            cout << error.what() << endl;
+        }
+    }
+    try {
+        MRN->cadastrarPessoa(pessoa);
+        cout << endl << "Usuario cadastrado com sucesso" << endl;
+    } catch (runtime_error error){
+        cout << error.what() << endl;
+    }
+}
+
+void MIU_Pessoa::criarGerente(){
 }
