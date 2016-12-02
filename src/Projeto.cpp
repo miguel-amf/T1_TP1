@@ -22,6 +22,7 @@ Nome Projeto::getNome()
 
 void Projeto::setNome(Nome novoNome)
 {
+    if(fase.getFase() != 3)
     nomeProjeto = novoNome;
 }
 
@@ -32,6 +33,7 @@ CodigoProjeto Projeto::getCodigoProjeto()
 
 void Projeto::setCodigoProjeto(CodigoProjeto novoCod)
 {
+    if(fase.getFase() != 3)
     codProjeto = novoCod;
 }
 
@@ -42,6 +44,7 @@ GerenteProjeto Projeto::getGerenteProjeto()
 
 void Projeto::setGerenteProjeto(GerenteProjeto novoGerente)
 {
+    if(fase.getFase() != 3)
     gerenteProjeto = novoGerente;
 }
 
@@ -62,8 +65,11 @@ Desenvolvedor Projeto::getDesenvolvedor(Nome nomeAlvo)
     return retornoFalso;
 }
 
-bool Projeto::setDesenvolvedor(Desenvolvedor desenNovo)
+bool Projeto::setDesenvolvedor(Matricula mat)
 {
+    Desenvolvedor desenNovo;
+    desenNovo.setMatricula(mat);
+    if(fase.getFase() == 3) return false;
     for(int i = 0; i<10; i++) {
         if (!vDesenvolvedores[i].getMatricula().getMatricula().compare("00000")) {
             vDesenvolvedores[i] = desenNovo;
@@ -73,10 +79,16 @@ bool Projeto::setDesenvolvedor(Desenvolvedor desenNovo)
     return false;
 }
 
-bool Projeto::remDesenvolvedor(int index)
+bool Projeto::remDesenvolvedor(Matricula mat)
 {
     Desenvolvedor zerado;
-    vDesenvolvedores[index] = zerado;
+    for(int i=0; i<10; i++) {
+
+        if(!vDesenvolvedores[i].getMatricula().getMatricula().compare(mat.getMatricula())) {
+            vDesenvolvedores[i] = zerado;
+            return true;
+        }
+    }
     return true;
 }
 
@@ -100,6 +112,7 @@ Custo Projeto::getCustoAtual()
 
 bool Projeto::setCustoAtual(Custo custoNovo)
 {
+    if(fase.getFase() == 3) return false;
     if(custoNovo.getCusto() <= custoPrevisto.getCusto()) {
         custoAtual.setCusto(custoNovo.getCusto());
         return true;
@@ -115,6 +128,7 @@ Custo Projeto::getCustoPrevisto()
 
 bool Projeto::setCustoPrevisto(Custo custoNovo)
 {
+    if(fase.getFase() == 3) return false;
     if(custoAtual.getCusto() <= custoNovo.getCusto()) {
         custoPrevisto = custoNovo;
         return true;
@@ -130,6 +144,7 @@ Data Projeto::getDataInicio()
 
 void Projeto::setDataInicio(Data dataNova)
 {
+    if(fase.getFase() != 3)
     dataInicio = dataNova;
 }
 
@@ -140,5 +155,6 @@ Data Projeto::getDataTermino()
 
 void Projeto::setDataTermino(Data dataNova)
 {
+    if(fase.getFase() != 3)
     dataTermino = dataNova;
 }

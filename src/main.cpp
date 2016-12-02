@@ -21,6 +21,8 @@ using namespace std;
 #include "IRN_Projetos.h"
 #include "MRN_Pessoa.h"
 #include "MIU_Pessoa.h"
+#include "MRN_Projetos.h"
+#include "MIU_Projetos.h"
 #include <vector>
 
 int getPermissao(Pessoa* usuario){
@@ -35,6 +37,7 @@ int getPermissao(Pessoa* usuario){
 
 int main() {
 
+    /*
     MIU_Autenticacao gui_auth;
     MRN_Autenticacao m_auth;
 
@@ -43,12 +46,24 @@ int main() {
     Pessoa* usuario = gui_auth.run();
     int permissao = getPermissao(usuario);
 
+
     MIU_Pessoa iu_pessoa(usuario,permissao);
 
     iu_pessoa.setMRN(&m_pessoa);
     iu_pessoa.menu();
 
+    */
 
+    MRN_Projetos mrn_proj;
+
+    mrn_proj.setClearance(1);
+    MIU_Projetos miu_proj(&mrn_proj);
+
+    try{
+        miu_proj.run();
+    }catch (runtime_error e){
+        cout << endl << e.what() <<endl;
+    }
 
     //cod teste do t1
     /*

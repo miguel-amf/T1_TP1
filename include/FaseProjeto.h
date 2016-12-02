@@ -35,6 +35,11 @@ class FaseProjeto {
     * \param [out] <retorno> valor de retorno referente ao fase.
     */
     int getFase() const;
+
+    void setAtivo();
+    void setInativo();
+    bool getAtividade();
+    string asString();
     private:
 
     //! avalia o valor
@@ -45,6 +50,8 @@ class FaseProjeto {
 
     //!variavel fase
     int fase;
+
+    bool ativo;
 };
 
 //!Unidade de Teste para Fase do Projeto
