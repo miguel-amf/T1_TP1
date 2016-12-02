@@ -178,7 +178,12 @@ void MIU_Projetos::associar() throw (runtime_error)
                 cout << "Desenvolvedor nao encontrado";
             }
         } else if(!input.compare("A")) {
-            if(proj.setDesenvolvedor(mat)) {
+            //TO-DO: checa na persistencia se existe desenvolvedor com aquela mat
+            Desenvolvedor des;
+            mat.setMatricula(input);
+            des.setMatricula(mat);
+            if(proj.setDesenvolvedor(des)) {
+
                 cout << "Desenvolvedor inserido com sucesso";
             } else {
                 cout << "Quantidade maxima de desenvolvedores atingida";

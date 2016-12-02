@@ -65,10 +65,8 @@ Desenvolvedor Projeto::getDesenvolvedor(Nome nomeAlvo)
     return retornoFalso;
 }
 
-bool Projeto::setDesenvolvedor(Matricula mat)
+bool Projeto::setDesenvolvedor(Desenvolvedor desenNovo)
 {
-    Desenvolvedor desenNovo;
-    desenNovo.setMatricula(mat);
     if(fase.getFase() == 3) return false;
     for(int i = 0; i<10; i++) {
         if (!vDesenvolvedores[i].getMatricula().getMatricula().compare("00000")) {

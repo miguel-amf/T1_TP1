@@ -43,7 +43,7 @@ Projeto MRN_Projetos::getProjeto(CodigoProjeto cod)  throw (runtime_error)
     if(clearance != 1) {
         throw runtime_error("Acesso Negado, voce nao tem permissao");
     }
-    if(!cod.getCodigo().compare("AAAAA")) {
+    if(cod.getCodigo().compare("AAAAA")) {
         throw runtime_error("Nao foi possivel acessar o banco de dados");
     }
     Projeto proj;
@@ -74,7 +74,7 @@ Projeto MRN_Projetos::getProjeto(Nome nome)  throw (runtime_error)
     if(clearance != 1) {
         throw runtime_error("Acesso Negado, voce nao tem permissao");
     }
-    if(!nome.getNome().compare("AAAAA")) {
+    if(nome.getNome().compare("AAAAA")) {
         throw runtime_error("Nao foi possivel acessar o banco de dados");
     }
     Projeto proj;
