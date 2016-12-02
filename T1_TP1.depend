@@ -399,11 +399,11 @@
 1480437022 c:\users\vitor\tp1\t1_tp1\include\estadoprojeto.h
 	<stdexcept>
 
-1480653528 source:c:\users\vitor\tp1\t1_tp1\src\faseprojeto.cpp
+1480654192 source:c:\users\vitor\tp1\t1_tp1\src\faseprojeto.cpp
 	"FaseProjeto.h"
 	<iostream>
 
-1480653528 c:\users\vitor\tp1\t1_tp1\include\faseprojeto.h
+1480654192 c:\users\vitor\tp1\t1_tp1\include\faseprojeto.h
 	<stdexcept>
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\funcao.cpp
@@ -439,7 +439,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480653528 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480656756 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -462,6 +462,7 @@
 	"MIU_Pessoa.h"
 	"MRN_Projetos.h"
 	"MIU_Projetos.h"
+	"M_Persistencia.h"
 	<vector>
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\matricula.cpp
@@ -490,8 +491,14 @@
 	<string>
 	<iostream>
 
-1480635293 source:c:\users\vitor\tp1\t1_tp1\src\mrn_autenticacao.cpp
+1480656515 source:c:\users\vitor\tp1\t1_tp1\src\mrn_autenticacao.cpp
 	"MRN_Autenticacao.h"
+	<iostream>
+
+1480654927 c:\users\vitor\tp1\t1_tp1\include\mrn_autenticacao.h
+	"IRN_Autenticao.h"
+	"I_Persistencia.h"
+	"Pessoa.h"
 	"string.h"
 	"Matricula.h"
 	"Senha.h"
@@ -502,10 +509,6 @@
 	"Telefone.h"
 	"Funcao.h"
 	"Desenvolvedor.h"
-
-1480635293 c:\users\vitor\tp1\t1_tp1\include\mrn_autenticacao.h
-	"IRN_Autenticao.h"
-	"Pessoa.h"
 
 1480635293 c:\users\vitor\tp1\t1_tp1\include\autenticacao\irn_autenticao.h
 	"Matricula.h"
@@ -567,7 +570,7 @@
 	<stdexcept>
 	<Projeto.h>
 
-1480653528 c:\users\vitor\tp1\t1_tp1\include\projeto.h
+1480654192 c:\users\vitor\tp1\t1_tp1\include\projeto.h
 	"Nome.h"
 	"CodigoProjeto.h"
 	"GerenteProjeto.h"
@@ -576,11 +579,11 @@
 	"Custo.h"
 	"FaseProjeto.h"
 
-1480653528 c:\users\vitor\tp1\t1_tp1\include\irn_projetos.h
+1480654192 c:\users\vitor\tp1\t1_tp1\include\irn_projetos.h
 	<stdexcept>
 	<Projeto.h>
 
-1480653528 source:c:\users\vitor\tp1\t1_tp1\src\projeto.cpp
+1480654192 source:c:\users\vitor\tp1\t1_tp1\src\projeto.cpp
 	"Projeto.h"
 	"Nome.h"
 	"CodigoProjeto.h"
@@ -590,25 +593,24 @@
 	"Custo.h"
 	<cstdlib>
 
-1480653521 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
+1480653836 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
 	<IRN_Pessoa.h>
 	<vector>
 
-1480653521 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
+1480653836 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
 	"Pessoa.h"
 	"Matricula.h"
 	<vector>
 
-1480653521 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
+1480653836 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
 	"MRN_Pessoa.h"
 	"GerenteProjeto.h"
 	"Desenvolvedor.h"
 	"GerenteSistema.h"
 
-<<<<<<< HEAD
-1480646888 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
-=======
-1480653521 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
+1480653521 D
+
+1480653836 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
 	"MIU_Pessoa.h"
 	"Pessoa.h"
 	<iostream>
@@ -616,7 +618,7 @@
 	<typeinfo>
 	"Desenvolvedor.h"
 
-1480653521 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
+1480653836 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
 	"Matricula.h"
 	"IRN_Pessoa.h"
 	"Pessoa.h"
@@ -624,11 +626,11 @@
 	"GerenteProjeto.h"
 	"GerenteSistema.h"
 
-1480653528 source:c:\users\vitor\tp1\t1_tp1\src\mrn_projetos.cpp
+1480654192 source:c:\users\vitor\tp1\t1_tp1\src\mrn_projetos.cpp
 	"MRN_Projetos.h"
 	<iostream>
 
-1480653528 c:\users\vitor\tp1\t1_tp1\include\mrn_projetos.h
+1480654192 c:\users\vitor\tp1\t1_tp1\include\mrn_projetos.h
 	"IRN_Projetos.h"
 
 1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\codigoprojeto.cpp
@@ -772,7 +774,8 @@
 	"Pessoa.h"
 
 1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\miu_pessoa.cpp
->>>>>>> master
+
+1480633915 ter
 	"MIU_Pessoa.h"
 	"Pessoa.h"
 	<iostream>
@@ -898,6 +901,39 @@
 1480641172 c:\users\mamfbr\documents\github\t2\t1_tp1\include\miu_projetos.h
 	"MRN_Projetos.h"
 
-1480653528 c:\users\vitor\tp1\t1_tp1\include\miu_projetos.h
+1480654192 c:\users\vitor\tp1\t1_tp1\include\miu_projetos.h
 	"MRN_Projetos.h"
+
+1480654192 source:c:\users\vitor\tp1\t1_tp1\src\fase.cpp
+	"Fase.h"
+
+1480654192 c:\users\vitor\tp1\t1_tp1\include\fase.h
+
+1480654192 source:c:\users\vitor\tp1\t1_tp1\src\miu_projetos.cpp
+	"MIU_Projetos.h"
+	<iostream>
+
+1480656934 source:c:\users\vitor\tp1\t1_tp1\src\m_persistencia.cpp
+	"M_Persistencia.h"
+	<iostream>
+
+1480656834 c:\users\vitor\tp1\t1_tp1\include\m_persistencia.h
+	<vector>
+	"CodigoProjeto.h"
+	"Pessoa.h"
+	"Projeto.h"
+	"Matricula.h"
+	"GerenteProjeto.h"
+	"GerenteSistema.h"
+	"Desenvolvedor.h"
+	"Nome.h"
+	"Senha.h"
+	"I_Persistencia.h"
+
+1480656870 c:\users\vitor\tp1\t1_tp1\include\i_persistencia.h
+	"Pessoa.h"
+	<vector>
+	"Matricula.h"
+	"Projeto.h"
+	"CodigoProjeto.h"
 

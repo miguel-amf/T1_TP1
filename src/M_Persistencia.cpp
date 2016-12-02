@@ -1,5 +1,5 @@
 #include "M_Persistencia.h"
-
+#include <iostream>
 M_Persistencia::M_Persistencia()
 {
     //ctor
@@ -39,40 +39,47 @@ void M_Persistencia::cadastrarPessoa(Pessoa* pessoa) throw(runtime_error)
     }
 }
 
-vector<Pessoa>* M_Persistencia::todasPessoas() throw(runtime_error)
+vector<Pessoa*>* M_Persistencia::todasPessoas() throw(runtime_error)
 {
     Matricula mat;
-    vector<Pessoa>* arr = new vector<Pessoa>;
-    GerenteProjeto  gerente;
-    Desenvolvedor dev;
+    vector<Pessoa*>* arr = new vector<Pessoa*>;
+    GerenteProjeto*  gerente = new GerenteProjeto;
+    Desenvolvedor* dev = new Desenvolvedor;
     Telefone tel;
     Nome nome;
     Email email;
+    Senha senha;
     Funcao func;
-    GerenteSistema admin;
+    GerenteSistema* admin = new GerenteSistema;
 
     mat.setMatricula("12345");
-    gerente.setMatricula(mat);
+    gerente->setMatricula(mat);
     nome.setNome("Daniel Luz");
-    gerente.setNome(nome);
+    gerente->setNome(nome);
     tel.setNumero("99991234");
-    gerente.setTelefone(tel);
+    gerente->setTelefone(tel);
+    senha.setSenha("54321");
+    gerente->setSenha(senha);
     arr->push_back(gerente);
 
     mat.setMatricula("23456");
     nome.setNome("Miguel Angelo");
-    admin.setNome(nome);
-    admin.setMatricula(mat);
+    admin->setNome(nome);
+    admin->setMatricula(mat);
+    senha.setSenha("65432");
+    admin->setSenha(senha);
     arr->push_back(admin);
 
     mat.setMatricula("33333");
-    dev.setMatricula(mat);
+    dev->setMatricula(mat);
     nome.setNome("Uriel Silva");
-    dev.setNome(nome);
+    dev->setNome(nome);
     email.setEmail("udiel@gmail.com");
-    dev.setEmail(email);
+    dev->setEmail(email);
     func.setFuncao(1);
-    dev.setFuncao(func);
+    dev->setFuncao(func);
+    senha.setSenha("senha");
+    dev->setSenha(senha);
     arr->push_back(dev);
 
     return arr;
@@ -85,6 +92,7 @@ Pessoa* M_Persistencia::getPessoa(Matricula mat) throw(runtime_error)
     GerenteSistema* admin = new GerenteSistema;
     Telefone tel;
     Nome nome;
+    Senha senha;
     Email email;
     Funcao func;
 
@@ -95,11 +103,15 @@ Pessoa* M_Persistencia::getPessoa(Matricula mat) throw(runtime_error)
             gerente->setNome(nome);
             tel.setNumero("99991234");
             gerente->setTelefone(tel);
+            senha.setSenha("54321");
+            gerente->setSenha(senha);
             return gerente;
         } else if (!mat.getMatricula().compare("23456")) {
             nome.setNome("Miguel Angelo");
             admin->setNome(nome);
             admin->setMatricula(mat);
+            senha.setSenha("65432");
+            admin->setSenha(senha);
             return admin;
         } else {
             dev->setMatricula(mat);
@@ -109,6 +121,8 @@ Pessoa* M_Persistencia::getPessoa(Matricula mat) throw(runtime_error)
             dev->setEmail(email);
             func.setFuncao(1);
             dev->setFuncao(func);
+            senha.setSenha("senha");
+            dev->setSenha(senha);
             return dev;
         }
     }

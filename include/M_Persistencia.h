@@ -11,9 +11,9 @@
 #include "Desenvolvedor.h"
 #include "Nome.h"
 #include "Senha.h"
+#include "I_Persistencia.h"
 
-class M_Persistencia
-{
+class M_Persistencia:public I_Persistencia{
     public:
         M_Persistencia();
 
@@ -25,7 +25,7 @@ class M_Persistencia
 
         void editarPessoa(Pessoa,Matricula) throw(runtime_error);
         void cadastrarPessoa(Pessoa*) throw(runtime_error);
-        vector<Pessoa>* todasPessoas() throw(runtime_error);
+        vector<Pessoa*>* todasPessoas() throw(runtime_error);
         Pessoa* getPessoa(Matricula) throw(runtime_error);
         bool deletarPessoa(Matricula) throw(runtime_error);
 

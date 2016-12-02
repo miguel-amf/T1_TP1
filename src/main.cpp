@@ -23,6 +23,7 @@ using namespace std;
 #include "MIU_Pessoa.h"
 #include "MRN_Projetos.h"
 #include "MIU_Projetos.h"
+#include "M_Persistencia.h"
 #include <vector>
 
 int getPermissao(Pessoa* usuario){
@@ -37,10 +38,10 @@ int getPermissao(Pessoa* usuario){
 
 int main() {
 
-
+    M_Persistencia persistencia;
     MIU_Autenticacao gui_auth;
     MRN_Autenticacao m_auth;
-
+    m_auth.setPersistencia(&persistencia);
     MRN_Projetos mrn_proj;
 
     gui_auth.setMRN(&m_auth);
