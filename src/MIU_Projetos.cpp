@@ -178,7 +178,7 @@ void MIU_Projetos::associar() throw (runtime_error)
 
         cout << "Deseja remover ou adicionar? (R/A) : ";
         cin >> input;
-        if (!input.compare("R")) {
+        if (!input.compare("R") || !input.compare("r")) {
             if(proj.remDesenvolvedor(mat)) {
                 //remove da persistencia (ao menos tenta)
                 regrasNegProjetos->editarProjeto(proj.getCodigoProjeto(), proj);
@@ -186,7 +186,7 @@ void MIU_Projetos::associar() throw (runtime_error)
             } else {
                 cout << "Desenvolvedor nao encontrado";
             }
-        } else if(!input.compare("A")) {
+        } else if(!input.compare("A") || !input.compare("a")) {
             //TO-DO: checa na persistencia se existe desenvolvedor com aquela mat
             Desenvolvedor des;
             mat.setMatricula(input);
@@ -213,22 +213,22 @@ void MIU_Projetos::alterar() throw (runtime_error)
 
         Projeto projetoNovo;
 
-        cout << "Digite o codigo do Projeto a ser alterado: ";
-        cin >> input;
-        CodigoProjeto cod;
-        cod.setCodigo(input);
-        Projeto p = regrasNegProjetos->getProjeto(cod);
-        if (p.getCodigoProjeto().getCodigo().compare(cod.getCodigo())) {
-            cout << "projeto nao encontrado";
-            terminou =1;
-        } else {
-            cout << "Projeto Localizado. iniciando alteracao, caso queira manter um campo inalterado, escreva skip no valor" << endl;
-        }
+
 
         while (!terminou){
             try {
 
-
+                cout << "Digite o codigo do Projeto a ser alterado: ";
+                cin >> input;
+                CodigoProjeto cod;
+                cod.setCodigo(input);
+                Projeto p = regrasNegProjetos->getProjeto(cod);
+                if (p.getCodigoProjeto().getCodigo().compare(cod.getCodigo())) {
+                    cout << "projeto nao encontrado";
+                    terminou =1;
+                } else {
+                    cout << "Projeto Localizado. iniciando alteracao, caso queira manter um campo inalterado, escreva skip no valor" << endl;
+                }
 
 
                 cout << "Nome do Projeto (letras): ";
