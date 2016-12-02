@@ -3,21 +3,25 @@
 
 #include "IRN_Projetos.h"
 
-class MRN_Projetos:public IRN_Projetos
+class MRN_Projetos: public IRN_Projetos
 {
     public:
         MRN_Projetos();
-        void allProjetos() throw (runtime_error) = 0;
+        void allProjetos() throw (runtime_error);
 
-        Projeto getProjeto(CodigoProjeto) throw (runtime_error) = 0;
-        Projeto getProjeto(Nome) throw (runtime_error) = 0;
+        Projeto getProjeto(CodigoProjeto) throw (runtime_error);
+        Projeto getProjeto(Nome) throw (runtime_error);
 
-        void coutProjeto(CodigoProjeto) throw (runtime_error) = 0;
-        void coutProjeto(Nome) throw (runtime_error) = 0;
+        bool fecharProjeto(CodigoProjeto) throw (runtime_error);
 
-        bool fecharProjeto(CodigoProjeto) throw (runtime_error) = 0;
+        bool editarProjeto(CodigoProjeto, Projeto) throw (runtime_error);
 
-        bool editarProjeto(CodigoProjeto, Projeto) throw (runtime_error) = 0;
+        bool criarProjeto(Projeto proj)  throw (runtime_error);
+
+        void setClearance(int);
+
+        int getClearance();
+
 
     protected:
     private:

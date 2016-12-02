@@ -625,3 +625,269 @@
 1480634837 c:\users\vitor\tp1\t1_tp1\include\mrn_projetos.h
 	"IRN_Projetos.h"
 
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\codigoprojeto.cpp
+	"CodigoProjeto.h"
+	<string>
+	<stdexcept>
+	<iostream>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\codigoprojeto.h
+	<string>
+	<stdexcept>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\custo.cpp
+	"Custo.h"
+	<stdexcept>
+	<iostream>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\custo.h
+	<stdexcept>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\data.cpp
+	"Data.h"
+	<iostream>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\data.h
+	<stdexcept>
+	<string>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\desenvolvedor.cpp
+	"Desenvolvedor.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\desenvolvedor.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+	"Email.h"
+	"Funcao.h"
+	"Pessoa.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\nome.h
+	<string>
+	<stdexcept>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\matricula.h
+	<stdexcept>
+	<string>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\telefone.h
+	<stdexcept>
+	<string>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\senha.h
+	<string>
+	<stdexcept>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\email.h
+	<stdexcept>
+	<string>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\funcao.h
+	<stdexcept>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\pessoa.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\email.cpp
+	"Email.h"
+	<stdexcept>
+	<string>
+	<iostream>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\estadoprojeto.cpp
+	"EstadoProjeto.h"
+	<iostream>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\estadoprojeto.h
+	<stdexcept>
+
+1480638092 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\faseprojeto.cpp
+	"FaseProjeto.h"
+	<iostream>
+
+1480638123 c:\users\mamfbr\documents\github\t2\t1_tp1\include\faseprojeto.h
+	<stdexcept>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\funcao.cpp
+	"Funcao.h"
+	<iostream>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\gerenteprojeto.cpp
+	"GerenteProjeto.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\gerenteprojeto.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+	"Pessoa.h"
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\gerentesistema.cpp
+	"GerenteSistema.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\gerentesistema.h
+	<stdexcept>
+	"Nome.h"
+	"Matricula.h"
+	"Telefone.h"
+	"Senha.h"
+	"Pessoa.h"
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\matricula.cpp
+	"Matricula.h"
+	<stdexcept>
+	<string>
+	<iostream>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\miu_autenticacao.cpp
+	"MIU_Autenticacao.h"
+	<iostream>
+	"MRN_Autenticacao.h"
+	"Matricula.h"
+	"Senha.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\miu_autenticacao.h
+	"MRN_Autenticacao.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\mrn_autenticacao.h
+	"IRN_Autenticao.h"
+	"Pessoa.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\autenticacao\irn_autenticao.h
+	"Matricula.h"
+	"Senha.h"
+	"Pessoa.h"
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\miu_pessoa.cpp
+	"MIU_Pessoa.h"
+	"Pessoa.h"
+	<iostream>
+	<vector>
+	<typeinfo>
+	"Desenvolvedor.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\miu_pessoa.h
+	"Matricula.h"
+	"IRN_Pessoa.h"
+	"Pessoa.h"
+	"Desenvolvedor.h"
+	"GerenteProjeto.h"
+	"GerenteSistema.h"
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\irn_pessoa.h
+	"Pessoa.h"
+	"Matricula.h"
+	<vector>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\mrn_autenticacao.cpp
+	"MRN_Autenticacao.h"
+	"string.h"
+	"Matricula.h"
+	"Senha.h"
+	"GerenteProjeto.h"
+	"GerenteSistema.h"
+	"Email.h"
+	"Nome.h"
+	"Telefone.h"
+	"Funcao.h"
+	"Desenvolvedor.h"
+
+1480647407 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\mrn_projetos.cpp
+	"MRN_Projetos.h"
+	<iostream>
+
+1480644074 c:\users\mamfbr\documents\github\t2\t1_tp1\include\mrn_projetos.h
+	"IRN_Projetos.h"
+
+1480644073 c:\users\mamfbr\documents\github\t2\t1_tp1\include\irn_projetos.h
+	<stdexcept>
+	<Projeto.h>
+
+1480646685 c:\users\mamfbr\documents\github\t2\t1_tp1\include\projeto.h
+	"Nome.h"
+	"CodigoProjeto.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"Data.h"
+	"Custo.h"
+	"FaseProjeto.h"
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\nome.cpp
+	"Nome.h"
+	<string>
+	<stdexcept>
+	<iostream>
+
+1480635376 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\pessoa.cpp
+	"Pessoa.h"
+
+1480646841 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\projeto.cpp
+	"Projeto.h"
+	"Nome.h"
+	"CodigoProjeto.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"Data.h"
+	"Custo.h"
+	<cstdlib>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\senha.cpp
+	"Senha.h"
+	<iostream>
+	<stdexcept>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\telefone.cpp
+	"Telefone.h"
+	<stdexcept>
+	<string>
+	<iostream>
+
+1480641978 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\main.cpp
+	"Funcao.h"
+	"Custo.h"
+	"CodigoProjeto.h"
+	"EstadoProjeto.h"
+	"FaseProjeto.h"
+	"Data.h"
+	"Nome.h"
+	"Telefone.h"
+	"Senha.h"
+	"Matricula.h"
+	"Email.h"
+	<iostream>
+	<stdio.h>
+	"GerenteProjeto.h"
+	"MRN_Autenticacao.h"
+	"MIU_Autenticacao.h"
+	"Projeto.h"
+	"IRN_Projetos.h"
+	"MRN_Pessoa.h"
+	"MIU_Pessoa.h"
+	"MRN_Projetos.h"
+	"MIU_Projetos.h"
+	<vector>
+
+1480633915 c:\users\mamfbr\documents\github\t2\t1_tp1\include\mrn_pessoa.h
+	<IRN_Pessoa.h>
+	<vector>
+
+1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\mrn_pessoa.cpp
+	"MRN_Pessoa.h"
+	"GerenteProjeto.h"
+	"Desenvolvedor.h"
+	"GerenteSistema.h"
+
+1480648987 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\miu_projetos.cpp
+	"MIU_Projetos.h"
+	<iostream>
+
+1480641172 c:\users\mamfbr\documents\github\t2\t1_tp1\include\miu_projetos.h
+	"MRN_Projetos.h"
+

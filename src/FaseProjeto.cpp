@@ -11,7 +11,21 @@ Trecho para implementacao do FaseProjeto
 FaseProjeto::FaseProjeto() {
     //inicializa a variavel
     fase = 0;
+    ativo = true;
 }
+
+void FaseProjeto::setAtivo() {
+    ativo = true;
+}
+
+void FaseProjeto::setInativo() {
+    ativo = false;
+}
+
+bool FaseProjeto::getAtividade() {
+    return ativo;
+}
+
 
 void FaseProjeto::setFase(int entrada) throw(invalid_argument){
 
@@ -39,6 +53,18 @@ void FaseProjeto::avalia(int entrada) throw(invalid_argument){
         throw invalid_argument("Entrada fora da faixa dinamica");
     }
 
+}
+
+string FaseProjeto::asString() {
+    switch(fase) {
+        case 0 :    return "Iniciacao";
+
+        case 1 :    return "Preparacao";
+
+        case 2 :    return "Execucao";
+
+        case 3 :    return "Encerramento";
+    }
 }
 
 /*

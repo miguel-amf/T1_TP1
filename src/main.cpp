@@ -21,6 +21,8 @@ using namespace std;
 #include "IRN_Projetos.h"
 #include "MRN_Pessoa.h"
 #include "MIU_Pessoa.h"
+#include "MRN_Projetos.h"
+#include "MIU_Projetos.h"
 #include <vector>
 
 int getPermissao(Pessoa* usuario){
@@ -35,146 +37,48 @@ int getPermissao(Pessoa* usuario){
 
 int main() {
 
+
     MIU_Autenticacao gui_auth;
     MRN_Autenticacao m_auth;
+
+    MRN_Projetos mrn_proj;
 
     gui_auth.setMRN(&m_auth);
     MRN_Pessoa m_pessoa;
     Pessoa* usuario = gui_auth.run();
     int permissao = getPermissao(usuario);
 
+
     MIU_Pessoa iu_pessoa(usuario,permissao);
 
-    iu_pessoa.setMRN(&m_pessoa);
-    iu_pessoa.menu();
+    int escolha;
+    while (true) {
+        cout    << "Bem vindo, " << usuario->getNome().getNome() << endl
+                << "Escolha um dos itens abaixo: " << endl
+                << "(1) Gestao de Pessoas" << endl
+                << "(2) Gestao de Projetos" << endl
+                << "(3) Sair" << endl;
+        cin >> escolha;
+        if (escolha == 3) {
+            cout << "saindo do sistema";
+            return 0;
+        }
 
+        if (escolha == 1) {
+            iu_pessoa.setMRN(&m_pessoa);
+            iu_pessoa.menu();
+        }
+        if (escolha == 2) {
+            mrn_proj.setClearance(permissao);
+            MIU_Projetos miu_proj(&mrn_proj);
 
-
-    //cod teste do t1
-    /*
-    cout << "TRABALHO 1 PROGRAMACAO ORIENTADA A OBJETOS" << endl
-         << "2016-2" << endl
-         << "INTEGRANTES:" << endl
-         << "Vitor Pontes 13/0137421" << endl
-         << "Miguel Montagner Filho 13/0127302" << endl << endl << endl;
-
-
-    CodigoProjeto codigoProjeto;
-    TesteCodigoProjeto testeCodP;
-
-    testeCodP.setUp(codigoProjeto);
-    testeCodP.run(codigoProjeto);
-    testeCodP.tearDown(codigoProjeto);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    Data data;
-    TesteData testeData;
-
-    testeData.setUp(data);
-    testeData.run(data);
-    testeData.tearDown(data);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    EstadoProjeto estadoProjeto;
-    TesteEstadoProjeto testeEstadoP;
-
-    testeEstadoP.setUp(estadoProjeto);
-    testeEstadoP.run(estadoProjeto);
-    testeEstadoP.tearDown(estadoProjeto);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    Funcao funcao;
-    TesteFuncao testeF;
-
-    testeF.setUp(funcao);
-    testeF.run(funcao);
-    testeF.tearDown(funcao);
-
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    // Testando Dominio Nome
-    Nome b;
-    TesteNome test;
-
-    test.setUp(b);
-    test.run(b);
-    test.tearDown(b);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    // Testando Dominio Telefone
-    Telefone telefone;
-    TesteTelefone testeTelefone;
-
-    testeTelefone.setUp(telefone);
-    testeTelefone.run(telefone);
-    testeTelefone.tearDown(telefone);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    Senha senha;
-    TesteSenha testeSenha;
-
-    testeSenha.setUp(senha);
-    testeSenha.run(senha);
-    testeSenha.tearDown(senha);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    Matricula matricula;
-    TesteMatricula testeMatricula;
-
-    testeMatricula.setUp(matricula);
-    testeMatricula.run(matricula);
-    testeMatricula.tearDown(matricula);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-    Email email;
-    TesteEmail testeEmail;
-
-    testeEmail.setUp(email);
-    testeEmail.run(email);
-    testeEmail.tearDown(email);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-
-    FaseProjeto faseP;
-    TesteFaseProjeto testeFaseP;
-
-    testeFaseP.setUp(faseP);
-    testeFaseP.run(faseP);
-    testeFaseP.tearDown(faseP);
-
-    cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-
-
-    Custo custo;
-    TesteCusto testeCusto;
-
-    testeCusto.setUp(custo);
-    testeCusto.run(custo);
-    testeCusto.tearDown(custo);
-
-        cout << "Pressione enter para continuar ..." << endl;
-    getchar();
-    */
-
+            try{
+                miu_proj.run();
+            }catch (runtime_error e){
+                cout << endl << e.what() <<endl;
+            }
+        }
+    }
 
     return 0;
 }
