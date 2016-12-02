@@ -44,12 +44,17 @@ int main() {
     MRN_Projetos mrn_proj;
 
     gui_auth.setMRN(&m_auth);
+
+
     MRN_Pessoa m_pessoa;
     Pessoa* usuario = gui_auth.run();
     int permissao = getPermissao(usuario);
 
 
+
+
     MIU_Pessoa iu_pessoa(usuario,permissao);
+
 
     int escolha;
     while (true) {
@@ -65,12 +70,14 @@ int main() {
         }
 
         if (escolha == 1) {
+
             iu_pessoa.setMRN(&m_pessoa);
             iu_pessoa.menu();
         }
         if (escolha == 2) {
             mrn_proj.setClearance(permissao);
             MIU_Projetos miu_proj(&mrn_proj);
+
 
             try{
                 miu_proj.run();

@@ -87,7 +87,7 @@ bool Projeto::remDesenvolvedor(Matricula mat)
             return true;
         }
     }
-    return true;
+    return false;
 }
 
 bool Projeto::remDesenvolvedor(Nome nomeAlvo)
