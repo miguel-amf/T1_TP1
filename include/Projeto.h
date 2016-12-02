@@ -7,6 +7,7 @@
 #include "Desenvolvedor.h"
 #include "Data.h"
 #include "Custo.h"
+#include "FaseProjeto.h"
 
 
 
@@ -34,7 +35,7 @@ class Projeto
         Desenvolvedor getDesenvolvedor(int);
         Desenvolvedor getDesenvolvedor(Nome);
         bool setDesenvolvedor(Desenvolvedor);
-        bool remDesenvolvedor(int);
+        bool remDesenvolvedor(Matricula);
         bool remDesenvolvedor(Nome);
 
 
@@ -65,6 +66,8 @@ class Projeto
 
         Data dataInicio;
         Data dataTermino;
+
+        FaseProjeto fase;
 };
 
 #endif // PROJETO_H
