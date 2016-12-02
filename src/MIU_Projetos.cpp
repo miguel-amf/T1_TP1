@@ -139,7 +139,7 @@ void MIU_Projetos::cadastrar() throw (runtime_error)
     }
 
 }
-
+//3
 void MIU_Projetos::descadastrar() throw (runtime_error)
 {
     string input;
@@ -148,12 +148,19 @@ void MIU_Projetos::descadastrar() throw (runtime_error)
         cin >> input;
         CodigoProjeto cod;
         cod.setCodigo(input);
-        regrasNegProjetos->fecharProjeto(cod);
+        if(regrasNegProjetos->fecharProjeto(cod)) {
+            cout << "Projeto fechado com sucesso!";
+        } else {
+            cout << "Erro ao descadastrar projeto";
+        }
+
+
     }  catch (runtime_error e) {
         throw e;
     }
 }
 
+//4
 void MIU_Projetos::associar() throw (runtime_error)
 {
     string input;
@@ -173,6 +180,8 @@ void MIU_Projetos::associar() throw (runtime_error)
         cin >> input;
         if (!input.compare("R")) {
             if(proj.remDesenvolvedor(mat)) {
+                //remove da persistencia (ao menos tenta)
+                regrasNegProjetos->editarProjeto(proj.getCodigoProjeto(), proj);
                 cout << "Desenvolvedor removido com sucesso";
             } else {
                 cout << "Desenvolvedor nao encontrado";
@@ -197,9 +206,98 @@ void MIU_Projetos::associar() throw (runtime_error)
 
 void MIU_Projetos::alterar() throw (runtime_error)
 {
-    string input;
+        string input;
+    int terminou = 0;
+    float valor;
     try {
+
+        Projeto projetoNovo;
+
         cout << "Digite o codigo do Projeto a ser alterado: ";
+        cin >> input;
+        CodigoProjeto cod;
+        cod.setCodigo(input);
+        Projeto p = regrasNegProjetos->getProjeto(cod);
+        if (p.getCodigoProjeto().getCodigo().compare(cod.getCodigo())) {
+            cout << "projeto nao encontrado";
+            terminou =1;
+        } else {
+            cout << "Projeto Localizado. iniciando alteracao, caso queira manter um campo inalterado, escreva skip no valor" << endl;
+        }
+
+        while (!terminou){
+            try {
+
+
+
+
+                cout << "Nome do Projeto (letras): ";
+                cin.get();
+                getline(cin,input,'\n');
+                cin.get();
+                if (input.compare("skip")) {
+                    Nome nome;
+                    nome.setNome(input);
+                    projetoNovo.setNome(nome);
+                }
+
+
+
+                cout << endl << "Matricula do Gerente (5 numeros): ";
+                cin >> input;
+                if (input.compare("skip")) {
+                    GerenteProjeto gerente;
+                    Matricula mat;
+                    mat.setMatricula(input);
+                    gerente.setMatricula(mat);
+                    projetoNovo.setGerenteProjeto(gerente);
+                }
+
+                cout << "Custo Previsto (float) (0 para nao mudar): ";
+                cin >> valor;
+                Custo custo;
+                if (valor != 0) {
+                custo.setCusto(valor);
+                projetoNovo.setCustoPrevisto(custo);
+                }
+                cout << "Custo Atual (float) (0 para nao mudar): ";
+                cin >> valor;
+                if (valor != 0) {
+                custo.setCusto(valor);
+                projetoNovo.setCustoAtual(custo);
+                }
+
+                cout << "Data de Inicio (dd/mm/aaaa): ";
+                cin >> input;
+                Data data;
+                if (input.compare("skip")) {
+                data.setData(input);
+                projetoNovo.setDataInicio(data);
+                }
+
+                cout << "Data de Termino (dd/mm/aaaa): ";
+                cin >> input;
+                if (input.compare("skip")) {
+                data.setData(input);
+                projetoNovo.setDataTermino(data);
+                }
+                regrasNegProjetos->criarProjeto(projetoNovo);
+
+                cout << "Registro criado com sucesso!";
+
+                terminou = 1;
+
+
+
+
+
+
+            }  catch (runtime_error e) {
+                throw e;
+            } catch (invalid_argument e) {
+                cout << endl << e.what() << endl << "Recomecando: " << endl;
+            }
+    }
     }  catch (runtime_error e) {
         throw e;
     }
