@@ -47,6 +47,7 @@
 		<Unit filename="include/IRN_Pessoa.h" />
 		<Unit filename="include/IRN_Projetos.h" />
 		<Unit filename="include/IRN_Usuarios.h" />
+		<Unit filename="include/I_Persistencia.h" />
 		<Unit filename="include/MIU_Autenticacao.h" />
 		<Unit filename="include/MIU_Pessoa.h" />
 		<Unit filename="include/MRN_Autenticacao.h" />
