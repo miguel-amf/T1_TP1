@@ -399,11 +399,11 @@
 1480437022 c:\users\vitor\tp1\t1_tp1\include\estadoprojeto.h
 	<stdexcept>
 
-1480437022 source:c:\users\vitor\tp1\t1_tp1\src\faseprojeto.cpp
+1480653528 source:c:\users\vitor\tp1\t1_tp1\src\faseprojeto.cpp
 	"FaseProjeto.h"
 	<iostream>
 
-1480437022 c:\users\vitor\tp1\t1_tp1\include\faseprojeto.h
+1480653528 c:\users\vitor\tp1\t1_tp1\include\faseprojeto.h
 	<stdexcept>
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\funcao.cpp
@@ -439,7 +439,7 @@
 	"Senha.h"
 	"Pessoa.h"
 
-1480635293 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
+1480653528 source:c:\users\vitor\tp1\t1_tp1\src\main.cpp
 	"Funcao.h"
 	"Custo.h"
 	"CodigoProjeto.h"
@@ -460,6 +460,8 @@
 	"IRN_Projetos.h"
 	"MRN_Pessoa.h"
 	"MIU_Pessoa.h"
+	"MRN_Projetos.h"
+	"MIU_Projetos.h"
 	<vector>
 
 1480437022 source:c:\users\vitor\tp1\t1_tp1\src\matricula.cpp
@@ -565,19 +567,20 @@
 	<stdexcept>
 	<Projeto.h>
 
-1480512059 c:\users\vitor\tp1\t1_tp1\include\projeto.h
+1480653528 c:\users\vitor\tp1\t1_tp1\include\projeto.h
 	"Nome.h"
 	"CodigoProjeto.h"
 	"GerenteProjeto.h"
 	"Desenvolvedor.h"
 	"Data.h"
 	"Custo.h"
+	"FaseProjeto.h"
 
-1480634837 c:\users\vitor\tp1\t1_tp1\include\irn_projetos.h
+1480653528 c:\users\vitor\tp1\t1_tp1\include\irn_projetos.h
 	<stdexcept>
 	<Projeto.h>
 
-1480512059 source:c:\users\vitor\tp1\t1_tp1\src\projeto.cpp
+1480653528 source:c:\users\vitor\tp1\t1_tp1\src\projeto.cpp
 	"Projeto.h"
 	"Nome.h"
 	"CodigoProjeto.h"
@@ -587,22 +590,22 @@
 	"Custo.h"
 	<cstdlib>
 
-1480644541 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
+1480653521 c:\users\vitor\tp1\t1_tp1\include\mrn_pessoa.h
 	<IRN_Pessoa.h>
 	<vector>
 
-1480644485 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
+1480653521 c:\users\vitor\tp1\t1_tp1\include\irn_pessoa.h
 	"Pessoa.h"
 	"Matricula.h"
 	<vector>
 
-1480644791 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
+1480653521 source:c:\users\vitor\tp1\t1_tp1\src\mrn_pessoa.cpp
 	"MRN_Pessoa.h"
 	"GerenteProjeto.h"
 	"Desenvolvedor.h"
 	"GerenteSistema.h"
 
-1480646327 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
+1480653521 source:c:\users\vitor\tp1\t1_tp1\src\miu_pessoa.cpp
 	"MIU_Pessoa.h"
 	"Pessoa.h"
 	<iostream>
@@ -610,7 +613,7 @@
 	<typeinfo>
 	"Desenvolvedor.h"
 
-1480636409 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
+1480653521 c:\users\vitor\tp1\t1_tp1\include\miu_pessoa.h
 	"Matricula.h"
 	"IRN_Pessoa.h"
 	"Pessoa.h"
@@ -618,11 +621,11 @@
 	"GerenteProjeto.h"
 	"GerenteSistema.h"
 
-1480634837 source:c:\users\vitor\tp1\t1_tp1\src\mrn_projetos.cpp
+1480653528 source:c:\users\vitor\tp1\t1_tp1\src\mrn_projetos.cpp
 	"MRN_Projetos.h"
 	<iostream>
 
-1480634837 c:\users\vitor\tp1\t1_tp1\include\mrn_projetos.h
+1480653528 c:\users\vitor\tp1\t1_tp1\include\mrn_projetos.h
 	"IRN_Projetos.h"
 
 1480633915 source:c:\users\mamfbr\documents\github\t2\t1_tp1\src\codigoprojeto.cpp
@@ -889,5 +892,8 @@
 	<iostream>
 
 1480641172 c:\users\mamfbr\documents\github\t2\t1_tp1\include\miu_projetos.h
+	"MRN_Projetos.h"
+
+1480653528 c:\users\vitor\tp1\t1_tp1\include\miu_projetos.h
 	"MRN_Projetos.h"
 
