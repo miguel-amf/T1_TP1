@@ -13,6 +13,7 @@ class MRN_Pessoa:public IRN_Pessoa
         void cadastrarPessoa(Pessoa) throw (runtime_error);
         vector<Pessoa>* todasPessoas() throw (runtime_error);
         Pessoa* getPessoa(Matricula) throw (runtime_error);
+        void editarPessoa(Pessoa*,Matricula) throw(runtime_error);
         bool deletarPessoa(Matricula) throw (runtime_error);
     private:
         bool deletarGerente(Matricula mat) throw (runtime_error);

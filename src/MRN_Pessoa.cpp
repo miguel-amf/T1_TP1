@@ -23,6 +23,10 @@ bool MRN_Pessoa::deletarGerente(Matricula mat) throw (runtime_error){
     return true;
 }
 
+void MRN_Pessoa::editarPessoa(Pessoa* pessoa, Matricula mat) throw (runtime_error){
+
+}
+
 bool MRN_Pessoa::deletarDesenvolvedor(Matricula mat) throw (runtime_error){
     if(!mat.getMatricula().compare("12345")){
         return false;

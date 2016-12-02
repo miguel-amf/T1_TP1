@@ -17,11 +17,16 @@ class MIU_Pessoa
 
     private:
         void listar();
-        void editar(Matricula);
         void exibir(Matricula);
         void criarGerente();
         void criarDesenvolvedor();
         void deletarPessoa(Matricula);
+        void editarPerfil();
+        void editarGerenteSistema(GerenteSistema*);
+        void editarGerenteProjeto(GerenteProjeto*);
+        void editarDesenvolvedor(Desenvolvedor*);
+
+        // Attributes
         IRN_Pessoa* MRN;
         int permissao;
         Pessoa* usuario;
