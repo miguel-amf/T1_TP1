@@ -491,7 +491,7 @@
 	<string>
 	<iostream>
 
-1480656515 source:c:\users\vitor\tp1\t1_tp1\src\mrn_autenticacao.cpp
+1480657081 source:c:\users\vitor\tp1\t1_tp1\src\mrn_autenticacao.cpp
 	"MRN_Autenticacao.h"
 	<iostream>
 
@@ -913,11 +913,11 @@
 	"MIU_Projetos.h"
 	<iostream>
 
-1480656934 source:c:\users\vitor\tp1\t1_tp1\src\m_persistencia.cpp
+1480659299 source:c:\users\vitor\tp1\t1_tp1\src\m_persistencia.cpp
 	"M_Persistencia.h"
 	<iostream>
 
-1480656834 c:\users\vitor\tp1\t1_tp1\include\m_persistencia.h
+1480658676 c:\users\vitor\tp1\t1_tp1\include\m_persistencia.h
 	<vector>
 	"CodigoProjeto.h"
 	"Pessoa.h"
@@ -929,6 +929,8 @@
 	"Nome.h"
 	"Senha.h"
 	"I_Persistencia.h"
+	"Funcao.h"
+	"Email.h"
 
 1480656870 c:\users\vitor\tp1\t1_tp1\include\i_persistencia.h
 	"Pessoa.h"

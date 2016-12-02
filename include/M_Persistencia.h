@@ -12,6 +12,8 @@
 #include "Nome.h"
 #include "Senha.h"
 #include "I_Persistencia.h"
+#include "Funcao.h"
+#include "Email.h"
 
 class M_Persistencia:public I_Persistencia{
     public:

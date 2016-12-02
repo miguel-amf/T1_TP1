@@ -17,13 +17,71 @@ void M_Persistencia::cadastrarProjeto(Projeto proj) throw(runtime_error)
 
 Projeto M_Persistencia::getProjeto(CodigoProjeto cod) throw(runtime_error)
 {
+    if(!cod.getCodigo().compare("AAAAA")) {
+        throw runtime_error("Nao foi possivel acessar o banco de dados");
+    }
     Projeto proj;
+    Nome nome,nomeDev;
+    Custo c;
+    Matricula mat;
+    Data data;
+    Desenvolvedor desenvolvedor,dev;
+    GerenteProjeto gerenteProj;
+    c.setCusto(1000);
+    Funcao func;
+    nome.setNome("Sistema Financeiro");
+    Email email;
+    Senha senha;
+
+    mat.setMatricula("33333");
+    dev.setMatricula(mat);
+    nomeDev.setNome("Uriel Silva");
+    dev.setNome(nomeDev);
+    email.setEmail("udiel@gmail.com");
+    dev.setEmail(email);
+    func.setFuncao(1);
+    dev.setFuncao(func);
+    senha.setSenha("senha");
+    dev.setSenha(senha);
+
+    proj.setCodigoProjeto(cod);
+    proj.setNome(nome);
+    proj.setCustoAtual(c);
+    c.setCusto(1500);
+    proj.setCustoPrevisto(c);
+    proj.setDataInicio(data);
+    data.setData("11/10/2016");
+    proj.setDataTermino(data);
+    proj.setDesenvolvedor(desenvolvedor);
+    proj.setDesenvolvedor(dev);
+    proj.setGerenteProjeto(gerenteProj);
     return proj;
 }
 
 vector<Projeto>* M_Persistencia::todosProjetos() throw(runtime_error)
 {
     vector<Projeto>* projs = new vector<Projeto>;
+    Projeto proj;
+    CodigoProjeto cod;
+    try{
+        cod.setCodigo("ABCDE");
+        proj = getProjeto(cod);
+        projs->push_back(proj);
+        cod.setCodigo("12345");
+        proj = getProjeto(cod);
+        projs->push_back(proj);
+        cod.setCodigo("23456");
+        proj = getProjeto(cod);
+        projs->push_back(proj);
+        cod.setCodigo("A1C3E");
+        proj = getProjeto(cod);
+        projs->push_back(proj);
+        cod.setCodigo("A23DE");
+        proj = getProjeto(cod);
+        projs->push_back(proj);
+    } catch (runtime_error error){
+        throw error;
+    }
     return projs;
 }
 
